@@ -1,5 +1,5 @@
 import { IDateProps } from "@/interfaces";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Protest_Strike } from "next/font/google";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
 
@@ -10,33 +10,39 @@ const  bebas = Bebas_Neue({
     variable: '--font-bebas',
 });
 
+const  protest = Protest_Strike({
+    subsets:['latin'],
+    weight: ['400'],
+    variable: '--font-bebas',
+});
+
 
 function TicketCard ({ticket}: IDateProps) {
 
 
     return (
-        <main className="flex flex-row items-center space-x-[3vw] w-screen ">
+        <main className="flex flex-row items-center space-x-[3vw] w-screen justify-center ">
 
-            <section>
-                <div className="flex flex-row space-x-[1vw]">
-                <FaMapLocationDot />
-                <p>{ticket.location}</p>
+            <section className="space-y-[3vh] w-[18vw]">
+                <div className="flex flex-row space-x-[1vw] items-center">
+                <FaMapLocationDot className="text-6xl text-purple-700"/>
+                <p className="font-extrabold text-2xl uppercase">{ticket.location}</p>
                 </div>
 
-                <div className="flex flex-row space-x-[1vw] ">
-                <GoClockFill />
-                <p>{ticket.time}</p>
+                <div className="flex flex-row space-x-[1vw] items-center ">
+                <GoClockFill className="text-4xl text-purple-700"/>
+                <p className="font-extrabold text-2xl">{ticket.time}</p>
                 </div>
             </section>
 
-            <section>
-                <h1>{ticket.name}</h1>
-                <h1>{ticket.date}</h1>
+            <section className="w-[50vw]">
+                <h1 className={`${bebas.variable} font-sans hidden md:text-8xl lg:flex space-x-8 mr-6 text-purple-700`}>{ticket.name}</h1>
+                <h1 className={`${bebas.variable} font-sans hidden md:text-7xl lg:flex space-x-8 mr-6`}>{ticket.date}</h1>
             </section>
 
             <section>
                 <a href={ticket.link} target="_blank" rel="noopener noreferrer">
-                <button>COMPRAR</button>
+                <button className={`${bebas.variable} font-sans w-[16vw] h-[10vh] md:text-4xl hover:bg-purple-700 rounded-md transition-all duration-300 hover:scale-110 border-2 border-purple-700 bg-black `}>COMPRAR</button>
                 </a>
             </section>
 

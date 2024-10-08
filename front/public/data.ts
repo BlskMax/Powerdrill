@@ -3,19 +3,19 @@ import { IDate } from "@/interfaces/index"
 export const mockDates: IDate[] = [
     {
         id:1,
-        time: "2000HRS",
+        time: "20:00HRS",
         date: "FEBRERO 32",
-        location: "Gran Teatro Tenoch #32",
-        name: "CUERNAVACA, MORELOS",
+        location: "MALAIDEA, MEDELLIN #143 COL.ROMA",
+        name: "cuauhtémoc, cdmx",
         link: "https://carlosballarta.net/",
     },
 
     {
         id:2,
-        time: "2000HRS",
-        date: "FEBRERO 32",
-        location: "Gran Teatro Tenoch #32",
-        name: "CUERNAVACA, MORELOS",
+        time: "20:00HRS",
+        date: "marzo 8",
+        location: "GATO CALAVERA XOLA #114 Col.alamos",
+        name: "Benito juárez, cdmx",
         link: "https://carlosballarta.net/",
     },
  ]

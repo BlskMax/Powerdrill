@@ -24,7 +24,7 @@ const config: Config = {
       fontFamily: {
         sans: 'var(--font-bebas)',
         mono: 'var(--font-allura)',
-        black: 'var (--font-josefin)'
+        black: 'var (--font-protest)'
       },
       keyframes: {
         display: {
