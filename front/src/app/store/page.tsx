@@ -5,11 +5,14 @@ export default function about () {
   return (
     <main 
     className={styles.fondo}>
-
     <div className="w-screen h-screen">
-      <h1 className="mt-[28vh] text-center text-8xl">Esta es la pagina de tienda</h1>
-    </div>  
 
+    <div className="md:ml-[2vw] md:mt-[20vh] ">
+    <img src="/images/uniforme.png" alt="logo" className="absolute h-[50vh] logo" />
+    </div>
+
+
+    </div>  
     </main>
   );
 }

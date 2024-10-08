@@ -34,22 +34,28 @@ function Navbar() {
 
             <section className="flex flex-row justify-end w-full md:w-auto space-x-4 md:space-x-12">
 
-
+                    {pathname !== '/sound' && (                        
                     <button type="button" onClick={() => router.push('/sound')}>
                         <h1 className={`${allura.variable} font-sans login cursor-pointer text-4xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Sound</h1>
                     </button>
+                    )}
 
+                    {pathname !== '/tickets' && (
                     <button type="button" onClick={() => router.push('/tickets')}>
                         <h1 className={`${allura.variable} font-sans login cursor-pointer text-4xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Tickets</h1>
                     </button>
- 
-                    <button type="button" onClick={() => router.push('/store')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-4xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Store</h1>
-                    </button>
+                    )}
 
+                    {pathname !== '/store' && (
+                    <button type="button" onClick={() => router.push('/store')}>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-4xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Merch</h1>
+                    </button>
+                    )}
+                    {pathname !== '/about' && (    
                     <button type="button" onClick={() => router.push('/about')}>
                         <h1 className={`${allura.variable} font-sans login cursor-pointer text-4xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>About</h1>
                     </button>
+                    )}
 
             </section>
         </div>
