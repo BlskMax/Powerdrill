@@ -7,7 +7,7 @@ export const mockDates: IDate[] = [
         date: "FEBRERO 32",
         location: "MALAIDEA, MEDELLIN #143 COL.ROMA",
         name: "cuauhtémoc, cdmx",
-        link: "https://carlosballarta.net/",
+        link: "https://wa.me/525570680017",
     },
 
     {
@@ -16,6 +16,6 @@ export const mockDates: IDate[] = [
         date: "marzo 8",
         location: "GATO CALAVERA XOLA #114 Col.alamos",
         name: "Benito juárez, cdmx",
-        link: "https://carlosballarta.net/",
+        link: "https://www.ticketmaster.com.mx/",
     },
  ]
