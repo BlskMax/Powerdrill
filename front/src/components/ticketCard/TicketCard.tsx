@@ -24,13 +24,13 @@ function TicketCard ({ticket}: IDateProps) {
         <main className="flex flex-row items-center space-x-[3vw] w-screen justify-center ">
 
             <section className="space-y-[3vh] w-[18vw]">
-                <div className="flex flex-row space-x-[1vw] items-center">
+                <div className="flex flex-row space-x-[1vw] items-center h-[10vh]">
                 <FaMapLocationDot className="text-6xl text-purple-700"/>
-                <p className="font-extrabold text-2xl uppercase">{ticket.location}</p>
+                <p className="font-extrabold text-xl uppercase">{ticket.location}</p>
                 </div>
 
                 <div className="flex flex-row space-x-[1vw] items-center ">
-                <GoClockFill className="text-4xl text-purple-700"/>
+                <GoClockFill className="text-3xl text-purple-700"/>
                 <p className="font-extrabold text-2xl">{ticket.time}</p>
                 </div>
             </section>
@@ -42,7 +42,7 @@ function TicketCard ({ticket}: IDateProps) {
 
             <section>
                 <a href={ticket.link} target="_blank" rel="noopener noreferrer">
-                <button className={`${bebas.variable} font-sans w-[16vw] h-[10vh] md:text-4xl hover:bg-purple-700 rounded-md transition-all duration-300 hover:scale-110 border-2 border-purple-700 bg-black `}>COMPRAR</button>
+                <button className={`${bebas.variable} font-sans w-[16vw] h-[10vh] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2 border-purple-700 bg-black hover:text-purple-700 `}>COMPRAR</button>
                 </a>
             </section>
 

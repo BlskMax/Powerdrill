@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import { Inter } from "next/font/google";
+import Footer from "@/components/footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,6 +21,8 @@ export const metadata: Metadata = {
   description: "",
 };
 
+const inter = Inter ({ subsets: ["latin"] }) ;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +32,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <div className={inter.className}>{children}</div>
+        <Footer />
       </body>
     </html>
   );

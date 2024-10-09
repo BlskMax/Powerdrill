@@ -22,20 +22,20 @@ async function ticketComponent () {
   return (
     <main 
     className={styles.fondo}>
-    <div className="w-screen h-screen">
+    <div className="w-screen h-auto mb-[8vh] mt-[28vh]">
 
-      <section className="mt-[28vh]">
+      {/* <section className="mt-[28vh]">
       <h1 className="text-center text-8xl">Esta es la pagina de tickets</h1>
-      </section>
+      </section> */}
+
+      <div className="flex flex-row">
+        <img src="/images/fechasImage.png" alt="FECHAS"
+        className=" md:w-[28vw] md:mt-[10vh] md:mb-[10vh] md:mr-[5vw] md:ml-auto
+         w-[60vw] mt-[10vh] mb-[10vh] mr-auto ml-auto"></img>
+
+        </div>
 
       <section>
-        <h1
-            className={`${bebas.variable} font-sans            
-            text-9xl text-yellow-400 text-right
-            place-self-end mr-8 md:mt-[10vh] `}>
-        Fechas
-        </h1>
-
         <TicketList tickets={tickets} />
       </section>
 
