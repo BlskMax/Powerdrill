@@ -36,8 +36,8 @@ function TicketCard ({ticket}: IDateProps) {
             </section>
 
             <section className="w-[50vw]">
-                <h1 className={`${bebas.variable} font-sans hidden md:text-8xl lg:flex space-x-8 mr-6 text-purple-700`}>{ticket.name}</h1>
-                <h1 className={`${bebas.variable} font-sans hidden md:text-7xl lg:flex space-x-8 mr-6`}>{ticket.date}</h1>
+                <h1 className={`${bebas.variable} font-sans hidden md:text-8xl lg:flex space-x-8 mr-6 text-purple-700 uppercase`}>{ticket.name}</h1>
+                <h1 className={`${bebas.variable} font-sans hidden md:text-7xl lg:flex space-x-8 mr-6 uppercase`}>{ticket.date}</h1>
             </section>
 
             <section>
