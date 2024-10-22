@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
 <main>
-        <div className="bg-black absolute top-0 flex flex-col md:flex-row w-full items-center p-2 md:space-x-8 justify-between">
+        <div className="bg-black absolute top-0 flex flex-col md:flex-row w-full items-center p-4 md:space-x-8 justify-between border-b-2 border-purple-700">
         <section className="flex justify-start w-full md:w-auto items-center md:space-x-10">
     <button type="button" onClick={() => router.push('/')}>
         <div className="relative h-16 md:h-[10vh] w-16 md:w-[10vh]">

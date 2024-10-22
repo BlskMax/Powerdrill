@@ -19,9 +19,9 @@ function AlbumCard({ album }: IAlbumProps) {
                         className="md:w-[20vw] md:h-[40vh] object-cover duration-300 hover:opacity-70"
                     />
 
-                    {/* Mostrar las canciones al hacer hover */}
+                    
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white p-4">
-                        {/* Iterar sobre el array de canciones */}
+                        
                         {album.songs.map((song) => (
                             <div key={song.id} className="song-info">
                                 <p className={`${bebas.variable} font-sans md:text-2xl`}>
