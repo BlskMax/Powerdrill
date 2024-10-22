@@ -24,14 +24,14 @@ function TicketCard ({ticket}: IDateProps) {
         <main className="flex flex-row items-center space-x-[3vw] w-screen justify-center ">
 
             <section className="space-y-[3vh] w-[18vw]">
-                <div className="flex flex-row space-x-[1vw] items-center h-[10vh]">
-                <FaMapLocationDot className="text-6xl text-purple-700"/>
-                <p className="font-extrabold text-xl uppercase">{ticket.location}</p>
+                <div className="flex flex-row space-x-[1vw] items-center md:h-[10vh]">
+                <FaMapLocationDot className="md:text-6xl text-purple-700"/>
+                <p className="font-extrabold md:text-xl text-xs uppercase">{ticket.location}</p>
                 </div>
 
                 <div className="flex flex-row space-x-[1vw] items-center ">
-                <GoClockFill className="text-3xl text-purple-700"/>
-                <p className="font-extrabold text-2xl">{ticket.time}</p>
+                <GoClockFill className="md:text-3xl text-purple-700"/>
+                <p className="font-extrabold md:text-2xl text-xs">{ticket.time}</p>
                 </div>
             </section>
 

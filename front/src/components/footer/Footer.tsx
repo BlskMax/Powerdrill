@@ -16,46 +16,47 @@ function Footer () {
 
             <section className=" text-purple-700  pl-[1vw] flex flex-col justify-center
                 items-start space-y-1">
-                    <h1 className= {`${bebas.variable} font-sans text-xl`} >
+                    <h1 className= {`${bebas.variable} font-sans md:text-2xl
+                    text-lg leading-5 mb-[1vh]`} >
                     Está página ha sido creada por Max Galarza</h1>
 
                 <div className="flex flex-row items-center space-x-[1vw]">
                 
             <a href="https://www.instagram.com/blsk_max/" target="_blank" rel="noopener noreferrer">
                 <button>
-                <Image src="/images/instaWh.png" alt="tiktok"
-                    className="cosmo transition-transform 
+                <img src="/images/instaWh.png" alt="tiktok"
+                    className="cosmo transition-transform md:w-[3vw] w-[10vw]
                     duration-300 hover:scale-125 cursor-pointer"
-                height={100} width={40}  />
+                />
                 </button>
             </a>
 
             <a href="https://x.com/Blsk_Max" target="_blank" rel="noopener noreferrer">
             <button type="button">
-                <Image src="/images/xWh.png" alt="tiktok"
-                    className="cosmo transition-transform 
+                <img src="/images/xWh.png" alt="tiktok"
+                    className="cosmo transition-transform md:w-[3vw] w-[10vw]
                     duration-300 hover:scale-125 cursor-pointer"
-                height={100} width={40}  />
+                />
             </button>
             </a>
 
             
             <a href="https://www.linkedin.com/in/alejandro-maximiliano-galarza-ornelas-9b503b2b2/" target="_blank" rel="noopener noreferrer">
             <button>
-                <Image src="/images/inWh.png" alt="linkedin"
-                    className="cosmo transition-transform 
+                <img src="/images/inWh.png" alt="linkedin"
+                    className="cosmo transition-transform md:w-[3vw] w-[10vw]
                     duration-300 hover:scale-125 cursor-pointer"
-                height={100} width={40}  />
+                />
 
             </button>
             </a>
 
             <a href="https://github.com/BlskMax" target="_blank" rel="noopener noreferrer">
             <button>
-                <Image src="/images/gitWh.png" alt="github"
-                    className="cosmo transition-transform 
+                <img src="/images/gitWh.png" alt="github"
+                    className="cosmo transition-transform  md:w-[3vw] w-[10vw]
                     duration-300 hover:scale-125 cursor-pointer"
-                height={100} width={40}  />
+                />
 
             </button>
             </a>
@@ -66,17 +67,17 @@ function Footer () {
 
             <section className=" text-white flex flex-col justify-center pr-[1vw]
                 items-end ">
-                    <h1 className= {`${bebas.variable} font-sans text-xl`} >
+                    <h1 className= {`${bebas.variable} font-sans md:text-2xl text-right mb-[1vh]`} >
                     Fall for the valentine</h1>
 
                 <div className="flex flex-row items-center space-x-[1vw]">
             
             <a href="https://www.instagram.com/the_powerdrill_valentine/" target="_blank" rel="noopener noreferrer">
             <button>
-                <Image src="/images/insPur.png" alt="tiktok"
-                    className="cosmo transition-transform 
+                <img src="/images/insPur.png" alt="tiktok"
+                    className="cosmo transition-transform md:w-[3vw] w-[10vw]
                     duration-300 hover:scale-105 cursor-pointer"
-                height={100} width={40}  />
+                />
             </button>
             </a>      
             </div>

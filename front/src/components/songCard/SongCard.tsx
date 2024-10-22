@@ -28,7 +28,7 @@ function SongCard({ song }: IsongProps) {
                     <img
                         src={song.image}
                         alt={song.title}
-                        className="md:w-[20vw] md:h-[55vh] object-cover  duration-300 hover:opacity-70"
+                        className="md:w-[20vw] md:h-[55vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white">

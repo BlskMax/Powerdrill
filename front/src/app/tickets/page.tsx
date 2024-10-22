@@ -22,7 +22,7 @@ async function ticketComponent () {
   return (
     <main 
     className={styles.fondo}>
-    <div className="w-screen h-auto mb-[8vh] mt-[28vh]">
+    <div className="w-screen h-auto md:mb-[8vh] md:mt-[20vh]">
 
       {/* <section className="mt-[28vh]">
       <h1 className="text-center text-8xl">Esta es la pagina de tickets</h1>
@@ -30,8 +30,8 @@ async function ticketComponent () {
 
       <div className="flex flex-row">
         <img src="/images/fechasImage.png" alt="FECHAS"
-        className=" md:w-[28vw] md:mt-[10vh] md:mb-[10vh] md:mr-[5vw] md:ml-auto
-         w-[60vw] mt-[10vh] mb-[10vh] mr-auto ml-auto"></img>
+        className=" md:w-[28vw] md:mt-[2vh] md:mb-[10vh] md:mr-[5vw] md:ml-auto
+         w-[60vw] mt-[13vh] mb-[10vh] mr-auto ml-auto"></img>
 
         </div>
 

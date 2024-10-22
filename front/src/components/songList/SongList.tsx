@@ -15,7 +15,7 @@ function SongList ({songs}: ISongListProps) {
         
         <main className=" w-screen mt-[1vh] flex flex-row justify-evenly flex-wrap"> 
 
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-[5vw] md:gap-y-[2vw] pl-[2vw] pr-[2vw] ">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-[5vw] md:gap-y-[2vw] gap-x-[4vw] gap-y-[2vh] pl-[2vw] pr-[2vw] ">
         {songs.map ((song: Isong) => (
         <SongCard song={song} key={song.id}/>
         ))}

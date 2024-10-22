@@ -14,22 +14,26 @@ function HomeCards() {
 
     return (
 <>
-    <main className="flex flex-row ml-[2vw] mr-auto w-[90vw]">
+    <main className="md:flex md:flex-row md:ml-auto md:mr-[2vw] md:w-[90vw]
+     ">
 
-        <div className="flex flex-col w-[70vw]">
+        <div className="md:flex md:flex-col md:w-[70vw]
+        ">
             <button type="button" onClick={() => router.push('/sound')} className="cursor-pointer duration-500">
                 <img 
                     src="/images/musicaMock.png" 
-                    className="md:w-[70vw] border-2"
+                    className="md:w-[70vw] md:h-full md:mt-0 md:mb-0 border-2 md:rounded-none
+                    w-[92vw] h-[12vh] mb-[1vh] object-cover object-left rounded-lg"
                     alt="Carrousel Image 1"
                 />
             </button>
             
-            <div className="flex flex-row">
+            <div className="md:flex md:flex-row">
                 <button type="button" onClick={() => router.push('/tickets')} className="cursor-pointer duration-500">
                     <img 
                         src="/images/fechasMock.png" 
-                        className="md:w-[35vw] border-2"
+                        className="md:w-[35vw] md:h-full md:mt-0 md:mb-0 border-2 md:rounded-none
+                        w-[92vw] h-[12vh] mb-[1vh] object-cover rounded-lg"
                         alt="Carrousel Image 1"
                     />
                 </button>
@@ -37,7 +41,8 @@ function HomeCards() {
                 <button type="button" onClick={() => router.push('/store')} className="cursor-pointer duration-500">
                     <img 
                         src="/images/tiendaMock.png" 
-                        className="md:w-[35vw] border-2"
+                        className="md:w-[35vw] md:h-full md:mt-0 md:mb-0 border-2 md:rounded-none
+                        w-[92vw] h-[12vh] mb-[1vh] object-cover object-top rounded-lg"
                         alt="Carrousel Image 1"
                     />
                 </button>
@@ -47,7 +52,8 @@ function HomeCards() {
         <button type="button" onClick={() => router.push('/about')} className="cursor-pointer ml-auto">
             <img 
                 src="/images/conoceMock.png" 
-                className="md:h-[100%] md:w-[20vw] border-2 object-cover"
+                className="md:h-[100%] md:w-[20vw] border-2 md:object-cover md:object-center md:mt-0 md:mb-0 md:rounded-none
+                w-[92vw] h-[12vh] mb-[1vh] object-cover rounded-lg"
                 alt="Carrousel Image 1"
             />
         </button>
