@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
 <main>
-        <div className="bg-black absolute top-0 flex flex-row md:flex-row w-full items-center md:p-4 p-[1vw] md:space-x-8 justify-between border-b-2 border-purple-700">
+        <div className="bg-black absolute top-0 flex flex-row md:flex-row w-full items-center md:p-2 p-[1vw] md:space-x-8 justify-between border-b-2 border-purple-700">
         <section className="flex justify-start w-full md:w-auto items-center md:space-x-10">
     <button type="button" onClick={() => router.push('/')}>
         <div className="relative h-8 md:h-[10vh] w-16 md:w-[10vh]">
@@ -36,26 +36,26 @@ function Navbar() {
 
                     {pathname !== '/sound' && (                        
                     <button type="button" onClick={() => router.push('/sound')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Sound</h1>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Sound</h1>
                     </button>
                     )}
 
                     {pathname !== '/tickets' && (
                     <button type="button" onClick={() => router.push('/tickets')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Tickets</h1>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Shows</h1>
                     </button>
                     )}
 
                     {pathname !== '/store' && (
                     <button type="button" onClick={() => router.push('/store')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Merch</h1>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Merch</h1>
                     </button>
                     )}
-                    {pathname !== '/about' && (    
-                    <button type="button" onClick={() => router.push('/about')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-purple-700 hover:text-white transition-all custom-transition duration-300`}>Xclusive</h1>
+                    {/* {pathname !== '/exclusive' && (    
+                    <button type="button" onClick={() => router.push('/exclusive')}>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Xclusive</h1>
                     </button>
-                    )}
+                    )} */}
 
             </section>
         </div>

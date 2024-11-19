@@ -24,6 +24,8 @@ interface Isong {
     description:string;
     album:string;
     image:string;
+    download:string;
+    listen:string;
 }
 
 interface IsongProps {

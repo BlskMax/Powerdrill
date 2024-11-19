@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "@/components/backgrounds/Backgrounds.module.css"
 import SongList from "@/components/songList/SongList";
 import { IAlbum, Isong } from "@/interfaces";
-import { mockAlbums, mockSongs } from "../../../public/data";
+import { mockAlbums, mockSongs } from "@/data/data";
 import AlbumList from "@/components/albumList/AlbumList";
 
 async function fetchSongs (): Promise <Isong[]> {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "@/components/backgrounds/Backgrounds.module.css"
-import { mockDates } from "../../../public/data";
+import { mockDates } from "@/data/data";
 import { IDate } from "@/interfaces";
 import TicketList from "@/components/ticketList/TicketList";
 import { Bebas_Neue } from "next/font/google";

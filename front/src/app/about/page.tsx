@@ -7,7 +7,7 @@ export default function about () {
     className={styles.fondo}>
 
     <div className="w-screen h-screen">
-      <h1 className="mt-[28vh] text-center text-8xl">Esta es la pagina de about</h1>
+      
     </div>  
 
     </main>

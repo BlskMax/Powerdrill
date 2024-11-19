@@ -37,13 +37,14 @@ export default function Home() {
 
     <div className="md:mt-[2vh] md:w-[95vw] border-2 border-purple-700 bg-black bg-opacity-60 p-[3vw] md:mb-[10vh] mb-[3vh] ml-auto mr-auto">
 
-      <div>
+      <div id="about">
         <h1 className={`${allura.variable} font-sans md:text-8xl text-2xl md:leading-normal md:mb-0 mb-[1vh] leading-5 text-pink-500 text-center`}>La violencia no conoce fechas</h1>
         <p className={`${bebas.variable} font-sans md:w-[70vw] md:text-4xl text-sm ml-auto mr-auto text-white text-center`}>Haz llegado tarde a la fiesta, el grunge está muerto (y no queremos que regrese), no hay más que hartazgo, sueños violentos y gente que no quiere ser ellos mismos.</p>
         <p className={`${bebas.variable} font-sans md:w-[70vw] md:text-4xl text-sm ml-auto mr-auto text-white text-center`}>Entonces el Powerdrill empieza a tocar. </p>
       </div>
 
-      <div className="flex flex-col items-center justify-evenly md:mt-0 mt-[2vh] mb-[2vh]">
+      <div
+      className="flex flex-col items-center justify-evenly md:mt-0 mt-[2vh] mb-[2vh]">
 
         <article className="flex flex-row w-[50vw] justify-between">
           <img src="/images/alvBw.png" alt="ALBUMES" 
@@ -60,7 +61,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center md:space-y-[1vh] md:mt-0">
                 <h1 className={`${allura.variable} font-sans md:text-8xl text-xl md:w-[50vw] text-purple-700 text-center`}>It 's all over</h1>
-                <p className={`${bebas.variable} font-sans md:w-[70vw] md:text-4xl text-sm text-white text-left`}>Powerdrill Valentine es un dúo que nace de la necesidad por crear y que toma forma gracias a las inherentes molestias en el panorama músical under actual</p>
+                <p className={`${bebas.variable} font-sans md:w-[70vw] md:text-4xl text-sm text-white text-left`}>Powerdrill Valentine es un dúo que nace de la necesidad por crear y que toma forma gracias a las inherentes molestias en el panorama músical underground actual</p>
                 <p className={`${bebas.variable} font-sans md:w-[70vw] md:text-4xl text-sm text-purple-700 text-left`}>Nadie tiene energía para nada, la estructura está hecha y el mundo te odía, pero eso no detiene al powerdrill.</p>
                 <p className={`${bebas.variable} font-sans md:w-[70vw] md:text-4xl text-sm text-white text-left underline underline-offset-8 decoration-purple-700`}>No es más que un berrinche, pero es el mejor que escucharás jamás.</p>
             </div>
