@@ -17,8 +17,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Powerdrill",
+  title: "Powerdrill Valentine",
   description: "",
+  icons: {
+    icon: "/powerIco.svg",
+  },
 };
 
 const inter = Inter ({ subsets: ["latin"] }) ;
