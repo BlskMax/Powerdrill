@@ -26,6 +26,8 @@ interface Isong {
     image:string;
     download:string;
     listen:string;
+    lyrics:string;
+    available: boolean;
 }
 
 interface IsongProps {

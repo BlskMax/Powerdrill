@@ -25,6 +25,13 @@ const SongDetailPage = () => {
     const id = params["song-detail"]
     const [song, setSong] = useState <Isong | null>(null);
     console.log(params["song-detail"]);
+
+    const scrollToSection = () => {
+        const section = document.getElementById('letra');
+        if (section) {
+            section.scrollIntoView({behavior: 'smooth'})
+        }
+    };
     
     useEffect(() => {
         if (id) {
@@ -44,39 +51,63 @@ const SongDetailPage = () => {
 
     return (
         <main className={styles.fondo}>
-            <section className="w-screen h-screen">
+            <section className="w-screen h-auto">
                 
                 {song ? (
-                <main className="flex md:flex-row flex-col md:mt-[16vh] mt-[12vh]  ">
+                <main className="flex md:flex-col flex-col md:mt-[16vh] mt-[12vh]">
 
                     <button type="button" onClick={() => router.push('/sound')}>    
                         <FaArrowAltCircleLeft className="md:text-5xl md:ml-[3vw]
                         text-2xl"/>
                     </button>
 
-                    <div className="md:w-[50vw] md:mt-[10vh] ">
+                    <div className="md:w-screen md:mt-[5vh] md:flex-row flex-col flex">
                     <img src={song.image} 
-                    className="md:w-[30vw] w-[70vw] border-2 border-purple-700 p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
-                    </div>
+                    className="md:w-[30vw] w-[50vw] object-cover border-2 border-white p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
 
-                    <section className="flex flex-col md:w-[50vw] md:mt-0 mt-[3vh] items-center justify-center ">
-                    <h1 className= {`${allura.variable} font-sans md:text-8xl md:border-b-4 border-b-0 border-white text-pink-500 text-center
-                    text-5xl md:leading-[10vh] leading-[8vh] mb-[1vh]`} >
+                    <div className="md:mr-auto md:mt-auto md:mb-auto text-center ">
+                    <h1 className= {`${allura.variable} font-sans md:text-8xl text-pink-500 text-center
+                    text-4xl md:mb-[5vh]`} >
                     {song.title}</h1>
+                    
+                    
+                        {song.available ? (
 
-                    <div className="flex flex-col text-center">
+                    <div className="flex flex-row text-center space-x-[5vw] justify-center mt-[1vh] ">
                     <a href={song.download} target="_blank" rel="noopener noreferrer">
-                        <button>
-                            <h1 className= {`${bebas.variable} font-sans md:text-5xl text-4xl hover:text-purple-700 duration-150` } >Descarga gratuita</h1>
-                        </button>
+                    <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>DESCARGAR</button>
                     </a>
 
                     <a href={song.listen} target="_blank" rel="noopener noreferrer">
-                        <button className="md:mt-0 mt-[1vh] ">
-                        <h1 className= {`${bebas.variable} font-sans md:text-5xl text-4xl hover:text-purple-700 duration-150` } >Escuchar</h1>
-                        </button>
+                    <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>ESCUCHAR</button>
                     </a>
                     </div>
+                        ) : (
+                            <div>
+                                <h1 className="md:text-2xl text-xs w-[70vw] md:w-[30vw] ml-auto mr-auto border-2 md:p-[2vh] bg-black text-purple-500 ">Esta canción pronto estará disponible para escuchar y descargar</h1>
+                            </div>
+                        )
+                    }
+
+                    
+                        <button type="button" onClick={scrollToSection}
+                        className={`${bebas.variable} font-sans md:text-5xl text-3xl  transition-all duration-500 hover:text-pink-500
+                        md:mt-[5vh] mt-[2vh]
+                        `}>Lyrics</button>
+
+                    </div>
+                    </div>
+
+                    <section className="flex flex-col md:w-[50vw] md:mt-0 mt-[3vh] items-center justify-center ">
+
+                    </section>
+
+                    <section className="md:pb-[12vh] text-center md:mt-[10vh] " id="letra">
+                    <h1 className= {`${bebas.variable} font-sans md:text-7xl text-4xl md:mb-[5vh]` } >
+                        Lyrics
+                    </h1>
+                        <img src={song.lyrics} 
+                        className="md:w-[30vw] w-[70vw] border-2 border-purple-700 p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
                     </section>
 
                 </main>

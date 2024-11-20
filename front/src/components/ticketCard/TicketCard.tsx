@@ -13,7 +13,7 @@ const  bebas = Bebas_Neue({
 const  protest = Protest_Strike({
     subsets:['latin'],
     weight: ['400'],
-    variable: '--font-bebas',
+    variable: '--font-protest',
 });
 
 

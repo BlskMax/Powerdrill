@@ -24,7 +24,7 @@ function Navbar() {
         <div className="bg-black absolute top-0 flex flex-row md:flex-row w-full items-center md:p-2 p-[1vw] md:space-x-8 justify-between border-b-2 border-purple-700">
         <section className="flex justify-start w-full md:w-auto items-center md:space-x-10">
     <button type="button" onClick={() => router.push('/')}>
-        <div className="relative h-8 md:h-[10vh] w-16 md:w-[10vh]">
+        <div className="relative h-8 md:h-[8vh] w-16 md:w-[8vh] md:mt-[1vh] md:mb-[1vh] ">
             <img src="/images/pvBasic.png" alt="logo" className="md:absolute md:h-full md:w-full w-[10vw] logo duration-500 hover:scale-105 cursor-pointer" />
             <img src="/images/pvBasicPurple.png" alt="logo-hover" className="md:absolute md:h-full md:w-full w-[10vw]  opacity-0 hover:opacity-100 transition-opacity duration-300" />
         </div>
@@ -32,7 +32,7 @@ function Navbar() {
         </section>              
 
 
-            <section className="md:flex md:flex-row grid grid-cols-2 justify-end w-full md:w-auto space-x-2 md:space-x-12">
+            <section className="md:flex md:flex-row grid grid-cols-2 justify-end w-full md:w-auto space-x-2 md:space-x-12 md:pr-[1vw]">
 
                     {pathname !== '/sound' && (                        
                     <button type="button" onClick={() => router.push('/sound')}>

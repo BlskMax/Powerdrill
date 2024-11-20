@@ -38,6 +38,8 @@ export const mockDates: IDate[] = [
         image:"/images/mausan.jpg",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
 
     },
     {
@@ -49,6 +51,8 @@ export const mockDates: IDate[] = [
         image:"/images/sonica.jpg",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:3,
@@ -59,6 +63,8 @@ export const mockDates: IDate[] = [
         image:"/images/drill.jpg",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:4,
@@ -69,6 +75,8 @@ export const mockDates: IDate[] = [
         image:"/images/disco.png",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
 
     },
     {
@@ -80,6 +88,8 @@ export const mockDates: IDate[] = [
         image:"/images/butcher.jpg",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:6,
@@ -90,6 +100,8 @@ export const mockDates: IDate[] = [
         image:"/images/papersP.png",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:7,
@@ -100,6 +112,8 @@ export const mockDates: IDate[] = [
         image:"/images/papersP.png",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:8,
@@ -110,6 +124,8 @@ export const mockDates: IDate[] = [
         image:"/images/papersP.png",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:9,
@@ -120,6 +136,8 @@ export const mockDates: IDate[] = [
         image:"/images/papersP.png",
         download:"https://www.youtube.com/@lustrabbit6136",
         listen:"https://www.youtube.com/@lustrabbit6136",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
  ]
 
@@ -133,6 +151,8 @@ export const mockDates: IDate[] = [
         image:"/images/mausan.jpg",
         download:"none",
         listen:"none",
+        lyrics:"/images/mausan.jpg",
+        available:false,
 
     },
     {
@@ -144,6 +164,8 @@ export const mockDates: IDate[] = [
         image:"/images/sonica.jpg",
         download:"none",
         listen:"none",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:3,
@@ -154,6 +176,8 @@ export const mockDates: IDate[] = [
         image:"/images/drill.jpg",
         download:"none",
         listen:"none",
+        lyrics:"/images/mausan.jpg",
+        available:false,
     },
     {
         id:4,
@@ -164,6 +188,8 @@ export const mockDates: IDate[] = [
         image:"/images/disco.png",
         download:"none",
         listen:"none",
+        lyrics:"/images/mausan.jpg",
+        available:false,
 
     },
 ]
