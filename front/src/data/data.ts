@@ -9,23 +9,7 @@ export const mockDates: IDate[] = [
         name: "Cuernavaca, Morelos",
         link: "https://wa.me/525570680017",
     },
-
-    {
-        id:2,
-        time: "20:00HRS",
-        date: "marzo 8",
-        location: "GATO CALAVERA XOLA #114 Col.alamos",
-        name: "Benito juárez, cdmx",
-        link: "https://www.ticketmaster.com.mx/",
-    },
-    {
-        id:1,
-        time: "20:00HRS",
-        date: "FEBRERO 32",
-        location: "MALAIDEA, MEDELLIN #143 COL.ROMA",
-        name: "cuauhtémoc, cdmx",
-        link: "https://wa.me/525570680017",
-    },
+    
  ]
 
  export const mockSongs: Isong[] = [
