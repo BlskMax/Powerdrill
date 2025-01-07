@@ -21,7 +21,7 @@ const allura = Allura({
     variable: '--font-bebas',
 });
 
-const albumDetailPage = () => {
+const AlbumDetailPage = () => {
     const params = useParams(); 
     const id = params["album-detail"]
     const [album, setAlbum] = useState <IAlbum | null>(null);
@@ -113,4 +113,4 @@ const albumDetailPage = () => {
     );
 };
 
-export default albumDetailPage;
+export default AlbumDetailPage;
