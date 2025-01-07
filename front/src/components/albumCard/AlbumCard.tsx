@@ -10,7 +10,7 @@ const bebas = Bebas_Neue({
     variable: '--font-bebas',
 });
 
-function albumCard ({ album }: IAlbumProps) {
+function AlbumCard ({ album }: IAlbumProps) {
     
     const router = useRouter();
 
@@ -56,4 +56,4 @@ function albumCard ({ album }: IAlbumProps) {
     )
 }
 
-export default albumCard;
+export default AlbumCard;
