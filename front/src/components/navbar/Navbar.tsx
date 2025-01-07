@@ -36,19 +36,19 @@ function Navbar() {
 
                     {pathname !== '/sound' && (                        
                     <button type="button" onClick={() => router.push('/sound')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Sound</h1>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-pink-500 transition-all custom-transition duration-300`}>Sound</h1>
                     </button>
                     )}
 
                     {pathname !== '/tickets' && (
                     <button type="button" onClick={() => router.push('/tickets')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Shows</h1>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-pink-500 transition-all custom-transition duration-300`}>Shows</h1>
                     </button>
                     )}
 
                     {pathname !== '/store' && (
                     <button type="button" onClick={() => router.push('/store')}>
-                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-purple-700 transition-all custom-transition duration-300`}>Merch</h1>
+                        <h1 className={`${allura.variable} font-sans login cursor-pointer text-xl md:text-5xl text-white hover:text-pink-500 transition-all custom-transition duration-300`}>Merch</h1>
                     </button>
                     )}
                     {/* {pathname !== '/exclusive' && (    

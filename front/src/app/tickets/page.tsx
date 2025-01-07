@@ -22,7 +22,7 @@ async function ticketComponent () {
   return (
     <main 
     className={styles.fondo}>
-    <div className="w-screen h-auto md:mb-[8vh] md:mt-[20vh]">
+    <div className="w-screen h-screen md:mb-[8vh] md:mt-[20vh]">
 
       {/* <section className="mt-[28vh]">
       <h1 className="text-center text-8xl">Esta es la pagina de tickets</h1>

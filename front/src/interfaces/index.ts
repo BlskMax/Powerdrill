@@ -46,6 +46,10 @@ interface IAlbum {
     description:string;
     songs:Isong[];
     image:string;
+    available:boolean;
+    download:string;
+    listen:string;
+    release:string;
 }
 
 interface IAlbumProps {

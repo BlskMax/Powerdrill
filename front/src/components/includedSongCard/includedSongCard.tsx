@@ -10,7 +10,7 @@ const bebas = Bebas_Neue({
     variable: '--font-bebas',
 });
 
-function SongCard({ song }: IsongProps) {
+function IncludedSongCard ({ song }: IsongProps) {
 
     const router = useRouter();
 
@@ -49,4 +49,4 @@ function SongCard({ song }: IsongProps) {
     );
 }
 
-export default SongCard;
+export default IncludedSongCard;
