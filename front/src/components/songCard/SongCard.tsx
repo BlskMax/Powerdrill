@@ -23,11 +23,11 @@ function SongCard({ song }: IsongProps) {
 
     return (
         <>
-            <main className="flex flex-col-reverse items-center">
+            <main className="flex md:flex-col-reverse flex-col items-start">
                 <div className="relative border-2 border-purple-700 p-[1vw] bg-black">
                     <img
                         src={song.image}
-                        alt={song.title}
+                        alt={song.short}
                         className="md:w-[36vw] md:h-[38vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70"
                     />
 
@@ -41,8 +41,8 @@ function SongCard({ song }: IsongProps) {
                     </div>
                 </div>
 
-                <h1 className={`${bebas.variable} font-sans md:text-3xl md:mb-[2vh] mb-[1vh] text-center`}>
-                    {song.title}
+                <h1 className={`${bebas.variable} font-sans md:text-3xl text-sm md:w-[20vw] w-[40vw] md:text-center md:mb-[2vh] mt-[2vh] text-center mb-[1vh] `}>
+                    {song.short}
                 </h1>
             </main>
         </>

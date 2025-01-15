@@ -45,7 +45,7 @@ function AlbumCard ({ album }: IAlbumProps) {
                     {album.title}
                 </h1>
 
-                <h2 className={`${bebas.variable} font-sans md:text-3xl text-base md:mt-[0vh] md:mb-[2vh] mb-[1vh] text-center`}>
+                <h2 className={`${bebas.variable} font-sans md:text-3xl text-base md:mt-[0vh] md:mb-[2vh] mb-[1vh] text-center text-pink-500`}>
                     {album.release}    
                 </h2>
             </div>

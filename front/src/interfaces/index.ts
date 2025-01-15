@@ -5,6 +5,7 @@ interface IDate {
     time: string;
     date: string;
     location: string;
+    venue:string;
     name: string;
     link: string;
     available:boolean;
@@ -20,7 +21,8 @@ interface IDateListProps {
 
 interface Isong {
     id:number;
-    title: string;
+    short:string;
+    subtitle: string;
     link: string;
     description:string;
     album:string;

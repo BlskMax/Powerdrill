@@ -23,28 +23,58 @@ function TicketCard ({ticket}: IDateProps) {
     return (
         <main className="flex flex-row items-center space-x-[3vw] w-screen justify-center ">
 
-            <section className="space-y-[3vh] w-[18vw]">
-                <div className="flex flex-row space-x-[1vw] items-center md:h-[10vh]">
-                <FaMapLocationDot className="md:text-6xl text-purple-700"/>
-                <p className="font-extrabold md:text-xl text-xs uppercase">{ticket.location}</p>
-                </div>
+            {ticket.available ? (
+<>
+    <section className="space-y-[3vh] w-[18vw]">
+        <div className="flex flex-row space-x-[1vw] items-center md:h-[10vh]">
+            <FaMapLocationDot className="md:text-6xl text-purple-700"/>
+            <p className="font-extrabold md:text-xl text-xs uppercase">{ticket.location}</p>
+        </div>
 
-                <div className="flex flex-row space-x-[1vw] items-center ">
-                <GoClockFill className="md:text-3xl text-purple-700"/>
-                <p className="font-extrabold md:text-2xl text-xs">{ticket.time}</p>
-                </div>
-            </section>
+        <div className="flex flex-row space-x-[1vw] items-center ">
+            <GoClockFill className="md:text-3xl text-purple-700"/>
+            <p className="font-extrabold md:text-2xl text-xs">{ticket.time}</p>
+        </div>
+    </section>
 
-            <section className="w-[50vw]">
-                <h1 className={`${bebas.variable} font-sans hidden md:text-8xl lg:flex space-x-8 mr-6 text-purple-700 uppercase`}>{ticket.name}</h1>
-                <h1 className={`${bebas.variable} font-sans hidden md:text-7xl lg:flex space-x-8 mr-6 uppercase`}>{ticket.date}</h1>
-            </section>
+        <section className="w-[50vw]">
+            <h1 className={`${bebas.variable} font-sans hidden md:text-8xl lg:flex space-x-8 mr-6 text-purple-700 uppercase`}>{ticket.name}</h1>
+            <h1 className={`${bebas.variable} font-sans hidden md:text-7xl lg:flex space-x-8 mr-6 uppercase`}>{ticket.date}</h1>
+        </section>
 
-            <section>
-                <a href={ticket.link} target="_blank" rel="noopener noreferrer">
+        <section>
+            <a href={ticket.link} target="_blank" rel="noopener noreferrer">
                 <button className={`${bebas.variable} font-sans w-[16vw] h-[10vh] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2 border-purple-700 bg-black hover:text-purple-700 `}>COMPRAR</button>
-                </a>
-            </section>
+            </a>
+        </section>
+</>
+                
+            ) : (
+
+                <div className="flex flex-col-reverse justify-center items-center ">
+                    <section className="space-y-[3vh] w-[18vw]">
+                        <div className="flex flex-row space-x-[1vw] items-center md:h-[10vh]">
+                            <FaMapLocationDot className="md:text-4xl text-pink-500"/>
+                            <p className="font-extrabold md:text-xl text-xs uppercase">{ticket.venue}</p>
+                </div>
+
+    </section>
+
+        <section className="w-[50vw]">
+            <h1 className={`${bebas.variable} font-sans hidden  md:text-8xl lg:flex space-x-8 mr-6 text-pink-500 uppercase`}>{ticket.name}</h1>
+            <h1 className={`${bebas.variable} font-sans hidden md:text-7xl lg:flex space-x-8 mr-6 uppercase`}>{ticket.date}</h1>
+        </section>
+
+        {/* <section>
+            <a href={ticket.link} target="_blank" rel="noopener noreferrer">
+                <button className={`${bebas.variable} font-sans w-[16vw] h-[10vh] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2 border-purple-700 bg-black hover:text-purple-700 `}>FOTOS</button>
+            </a>
+        </section> */}
+            </div>
+
+            )}
+
+
 
         </main>
 

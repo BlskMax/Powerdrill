@@ -27,7 +27,7 @@ function IncludedSongCard ({ song }: IsongProps) {
                 <div className="relative border-2 border-purple-700 p-[1vw] bg-black">
                     <img
                         src={song.image}
-                        alt={song.title}
+                        alt={song.short}
                         className="md:w-[36vw] md:h-[38vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70"
                     />
 
@@ -42,7 +42,7 @@ function IncludedSongCard ({ song }: IsongProps) {
                 </div>
 
                 <h1 className={`${bebas.variable} font-sans md:text-3xl md:mb-[2vh] mb-[1vh] text-center`}>
-                    {song.title}
+                    {song.short}
                 </h1>
             </main>
         </>

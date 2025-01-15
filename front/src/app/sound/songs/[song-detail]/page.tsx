@@ -66,9 +66,12 @@ const SongDetailPage = () => {
                     className="md:w-[30vw] w-[50vw] object-cover border-2 border-white p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
 
                     <div className="md:mr-auto md:mt-auto md:mb-auto text-center ">
-                    <h1 className= {`${allura.variable} font-sans md:text-8xl text-pink-500 text-center
+                    <h1 className= {`${allura.variable} font-sans md:text-8xl text-white text-center
+                    text-4xl`} >
+                    {song.short}</h1>
+                    <h1 className= {`${allura.variable} font-sans md:text-5xl text-pink-500 text-center
                     text-4xl md:mb-[5vh]`} >
-                    {song.title}</h1>
+                    {song.subtitle}</h1>
                     
                     
                         {song.available ? (
