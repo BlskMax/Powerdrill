@@ -7,6 +7,7 @@ interface IDate {
     location: string;
     name: string;
     link: string;
+    available:boolean;
 }
 
 interface IDateProps {

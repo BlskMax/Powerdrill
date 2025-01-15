@@ -24,10 +24,6 @@ async function ticketComponent () {
     className={styles.fondo}>
     <div className="w-screen h-screen md:mb-[8vh] md:mt-[20vh]">
 
-      {/* <section className="mt-[28vh]">
-      <h1 className="text-center text-8xl">Esta es la pagina de tickets</h1>
-      </section> */}
-
       <div className="flex flex-row">
         <img src="/images/fechasImage.png" alt="FECHAS"
         className=" md:w-[28vw] md:mt-[2vh] md:mb-[10vh] md:mr-[5vw] md:ml-auto

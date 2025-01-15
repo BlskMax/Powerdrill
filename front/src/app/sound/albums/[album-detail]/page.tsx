@@ -82,7 +82,7 @@ const AlbumDetailPage = () => {
                     </div>
                         ) : (
                             <div>
-                                <h1 className="md:text-2xl text-xs w-[70vw] md:w-[30vw] ml-auto mr-auto border-2 md:p-[2vh] bg-black text-purple-500 ">
+                                <h1 className={`${bebas.variable} font-sans md:text-5xl text-xs w-[70vw] md:w-[30vw] ml-auto mr-auto border-2 border-purple-700 md:p-[2vh] bg-black text-white`}>
                                     Disponible: {album.release} </h1>
                             </div>
                         )

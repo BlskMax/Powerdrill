@@ -102,12 +102,12 @@ const SongDetailPage = () => {
 
                     </section>
 
-                    <section className="md:pb-[12vh] text-center md:mt-[10vh] " id="letra">
+                    <section className="md:pb-[12vh] mb-[5vh] text-center md:mt-[10vh] " id="letra">
                     <h1 className= {`${bebas.variable} font-sans md:text-7xl text-4xl md:mb-[5vh]` } >
                         Lyrics
                     </h1>
                         <img src={song.lyrics} 
-                        className="md:w-[30vw] w-[70vw] border-2 border-purple-700 p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
+                        className="md:w-[70vw] w-[70vw] border-2 border-white p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
                     </section>
 
                 </main>
