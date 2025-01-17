@@ -5,11 +5,21 @@ export const mockDates: IDate[] = [
         id:1,
         time: "20:00HRS",
         date: "Noviembre 23, 2024",
-        location: "Boulverard Juarez 302, Cuernavaca Centro",
+        location: "Blvd. Juarez 302, Cuernavaca Centro",
         venue:"El cabaré",
         name: "Cuernavaca, Morelos",
         link: "https://wa.me/525570680017",
         available: false,
+    },
+    {
+        id:1,
+        time: "20:00HRS",
+        date: "Noviembre 23, 2024",
+        location: "Blvd. Juarez 302, Cuernavaca Centro",
+        venue:"El cabaré",
+        name: "Cuernavaca, Morelos",
+        link: "https://wa.me/525570680017",
+        available: true,
     },
     
  ]

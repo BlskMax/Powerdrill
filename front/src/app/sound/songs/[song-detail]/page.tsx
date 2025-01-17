@@ -70,7 +70,7 @@ const SongDetailPage = () => {
                     text-4xl`} >
                     {song.short}</h1>
                     <h1 className= {`${allura.variable} font-sans md:text-5xl text-pink-500 text-center
-                    text-4xl md:mb-[5vh]`} >
+                    text-xl md:mb-[5vh] mb-[2vh] `} >
                     {song.subtitle}</h1>
                     
                     
@@ -94,19 +94,19 @@ const SongDetailPage = () => {
 
                     
                         <button type="button" onClick={scrollToSection}
-                        className={`${bebas.variable} font-sans md:text-5xl text-3xl  transition-all duration-500 hover:text-pink-500
-                        md:mt-[5vh] mt-[2vh]
+                        className={`${bebas.variable} font-sans md:text-5xl text-sm  transition-all duration-500 hover:text-pink-500
+                        md:mt-[5vh] md:opacity-100 opacity-0
                         `}>Lyrics</button>
 
                     </div>
                     </div>
 
-                    <section className="flex flex-col md:w-[50vw] md:mt-0 mt-[3vh] items-center justify-center ">
+                    <section className="flex flex-col md:w-[50vw] md:mt-0 mt-[1vh] items-center justify-center ">
 
                     </section>
 
-                    <section className="md:pb-[12vh] mb-[5vh] text-center md:mt-[10vh] " id="letra">
-                    <h1 className= {`${bebas.variable} font-sans md:text-7xl text-4xl md:mb-[5vh]` } >
+                    <section className="md:pb-[12vh] mb-[5vh] text-center md:mt-[10vh] mt-[0vh] " id="letra">
+                    <h1 className= {`${bebas.variable} font-sans md:text-7xl text-4xl md:mb-[5vh] mb-[2vh]` } >
                         Lyrics
                     </h1>
                         <img src={song.lyrics} 

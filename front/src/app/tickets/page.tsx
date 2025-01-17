@@ -24,7 +24,7 @@ async function ticketComponent () {
   return (
     <main 
     className={styles.fondo}>
-    <div className="w-screen h-auto md:mb-[8vh] md:mt-[20vh]">
+    <div className="w-screen h-auto mb-[15vh] md:mb-[8vh] md:mt-[20vh]">
 
       <section>
         {availableTickets.length > 0 ?
@@ -33,7 +33,7 @@ async function ticketComponent () {
           <div className="flex flex-row">
           <img src="/images/proxFechas.png" alt="FECHAS"
           className=" md:w-[55vw] md:mt-[2vh] md:mb-[10vh] md:mr-[5vw] md:ml-auto
-           w-[60vw] mt-[13vh] mb-[10vh] mr-auto ml-auto"></img>
+           w-[60vw] mt-[13vh] mb-[3vh] mr-auto ml-auto"></img>
           </div>
           <TicketList tickets={availableTickets} />
           </>
@@ -47,11 +47,11 @@ async function ticketComponent () {
       <div className="flex flex-row">
         <img src="/images/antFechas.png" alt="FECHAS"
         className=" md:w-[60vw] md:mt-[8vh] md:mb-[8vh] md:mr-auto md:ml-auto
-         w-[60vw] mt-[13vh] mb-[10vh] mr-auto ml-auto"></img>
+         w-[85vw] mt-[4vh] mb-[4vh] mr-auto ml-auto"></img>
 
         </div>
 
-      <section>
+      <section className="mb-[3vh] ">
         <TicketList tickets={pastTickets} />
       </section>
 
