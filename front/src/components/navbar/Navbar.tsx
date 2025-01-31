@@ -32,7 +32,7 @@ function Navbar() {
         </section>              
 
 
-            <section className="md:flex md:flex-row grid grid-cols-2 justify-end w-full md:w-auto space-x-2 md:space-x-12 md:pr-[1vw]">
+            <section className="md:flex md:flex-row justify-end w-[100vw] md:w-auto space-x-[4vw] md:space-x-12 md:pr-[1vw]">
 
                     {pathname !== '/sound' && (                        
                     <button type="button" onClick={() => router.push('/sound')}>
