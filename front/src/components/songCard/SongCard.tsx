@@ -34,9 +34,13 @@ function SongCard({ song }: IsongProps) {
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white">
                         <button
                             onClick={handleSongClick}
-                            className="font-bold md:text-4xl border-b-2 border-white border-opacity-0 hover:border-opacity-100 hover:border-pink-500 hover:scale-110 duration-300"
+                            className="font-bold md:text-4xl hover:scale-110 duration-300"
                         >
-                            DETALLES
+                            <img
+                            src="/images/adlerDetails.png"
+                            alt="DETALLES"
+                            className="md:w-[12vw] opacity-80 hover:opacity-100 duration-300"
+                            />
                         </button>
                     </div>
                 </div>
