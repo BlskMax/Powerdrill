@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { mockSongs } from "@/data/data";
 import styles from "@/components/backgrounds/Backgrounds.module.css"
-import { Isong } from "@/interfaces";
+import { Isong, IsongProps } from "@/interfaces";
 import { Allura, Bebas_Neue } from "next/font/google";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 
@@ -20,6 +20,9 @@ const allura = Allura({
     variable: '--font-bebas',
 });
 
+
+
+
 const SongDetailPage = () => {
     const params = useParams(); 
     const id = params["song-detail"]
@@ -32,6 +35,15 @@ const SongDetailPage = () => {
             section.scrollIntoView({behavior: 'smooth'})
         }
     };
+
+    const handleAlbumClick = () => {
+    
+        if (song?.albumId) {
+            router.push(`/sound/albums/${song?.albumId}`)
+        }
+    }
+
+
     
     useEffect(() => {
         if (id) {
@@ -73,17 +85,19 @@ const SongDetailPage = () => {
                     text-xl md:mb-[1vh] mb-[2vh] `} >
                     {song.subtitle}</h1>
 
-                    <h1 className= {`${bebas.variable} font-sans md:text-2xl text-pink-500 text-center
+                    <button
+                    onClick={handleAlbumClick}
+                    className= {`${bebas.variable} font-sans md:text-xl text-pink-500 text-center
                     text-xl md:mb-[5vh] mb-[2vh] `} >
-                    {song.album}</h1>
+                    {song.album}</button>
                     
                     
                         {song.available ? (
 
                     <div className="flex flex-row text-center space-x-[5vw] justify-center mt-[1vh] ">
-                    <a href={song.download} target="_blank" rel="noopener noreferrer">
+                    {/* <a href={song.download} target="_blank" rel="noopener noreferrer">
                     <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>DESCARGAR</button>
-                    </a>
+                    </a> */}
 
                     <a href={song.listen} target="_blank" rel="noopener noreferrer">
                     <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>ESCUCHAR</button>

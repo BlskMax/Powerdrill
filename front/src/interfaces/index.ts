@@ -26,6 +26,7 @@ interface Isong {
     link: string;
     description:string;
     album:string;
+    albumId:number;
     image:string;
     download:string;
     listen:string;
