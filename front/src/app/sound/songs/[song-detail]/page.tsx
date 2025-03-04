@@ -70,8 +70,12 @@ const SongDetailPage = () => {
                     text-4xl`} >
                     {song.short}</h1>
                     <h1 className= {`${allura.variable} font-sans md:text-5xl text-pink-500 text-center
-                    text-xl md:mb-[5vh] mb-[2vh] `} >
+                    text-xl md:mb-[1vh] mb-[2vh] `} >
                     {song.subtitle}</h1>
+
+                    <h1 className= {`${bebas.variable} font-sans md:text-2xl text-pink-500 text-center
+                    text-xl md:mb-[5vh] mb-[2vh] `} >
+                    {song.album}</h1>
                     
                     
                         {song.available ? (

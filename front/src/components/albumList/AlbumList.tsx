@@ -16,7 +16,7 @@ function AlbumList ({albums}: IAlbumListProps) {
         
         <main className=" w-screen mt-[1vh] flex flex-row justify-evenly flex-wrap"> 
 
-        <div className="flex">
+        <div className="flex md:space-x-[3vw]">
         {albums.map ((album: IAlbum) => (
         <AlbumCard album={album} key={album.id}/>
         ))}
