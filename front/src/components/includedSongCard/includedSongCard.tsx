@@ -28,7 +28,7 @@ function IncludedSongCard ({ song }: IsongProps) {
                     <img
                         src={song.image}
                         alt={song.short}
-                        className="md:w-[36vw] md:h-[38vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70"
+                        className="md:w-[36vw] md:h-[60vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70"
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white">
@@ -39,13 +39,13 @@ function IncludedSongCard ({ song }: IsongProps) {
                             <img
                             src="/images/adlerDetails.png"
                             alt="DETALLES"
-                            className="md:w-[12vw] w-[24vw] opacity-80 hover:opacity-100 duration-300"
+                            className="md:w-[13vw] w-[24vw] opacity-80 hover:opacity-100 duration-300"
                             />
                         </button>
                     </div>
                 </div>
 
-                <h1 className={`${bebas.variable} font-sans md:text-3xl md:mb-[2vh] mb-[1vh] text-center`}>
+                <h1 className={`${bebas.variable} font-sans md:text-4xl md:mb-[2vh] mb-[1vh] text-center`}>
                     {song.short}
                 </h1>
             </main>

@@ -27,7 +27,7 @@ const AlbumDetailPage = () => {
     const [album, setAlbum] = useState <IAlbum | null>(null);
     console.log(params["album-detail"]);
 
-    const songs = purpleLove;
+    const songs = album ? album.songs : [];
 
     
     useEffect(() => {
@@ -61,7 +61,7 @@ const AlbumDetailPage = () => {
 
                     <div className="md:w-screen md:mt-[5vh] md:flex-row flex-col flex">
                     <img src={album.image} 
-                    className="md:w-[30vw] w-[50vw] object-cover border-2 border-white p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
+                    className="md:w-[35vw] w-[50vw] object-cover border-2 border-white p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
 
                     <div className="md:mr-auto md:mt-auto md:mb-auto text-center ">
                     <h1 className= {`${allura.variable} font-sans md:text-8xl text-pink-500 text-center
@@ -97,7 +97,7 @@ const AlbumDetailPage = () => {
                         w-[60vw] mt-[10vh] mb-[3vh] ml-[6vw]">
                         </img>
                     </section>
-                    <div className="grid grid-cols-2 md:grid-cols-3 md:gap-x-[5vw] md:gap-y-[2vw] gap-x-[4vw] gap-y-[2vh] pl-[2vw] pr-[2vw] md:mb-[10vh] md:pl-[3vw] md:pr-[3vw] ">
+                    <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-[5vw] md:gap-y-[2vw] gap-x-[4vw] gap-y-[2vh] pl-[2vw] pr-[2vw] md:mb-[10vh] md:pl-[3vw] md:pr-[3vw] ">
                         {songs.map ((song: Isong) => (
                             <IncludedSongCard song={song} key={song.id}/>
                         ))}

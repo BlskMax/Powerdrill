@@ -24,11 +24,11 @@ function SongCard({ song }: IsongProps) {
     return (
         <>
             <main className="flex md:flex-col-reverse flex-col items-start">
-                <div className="relative border-2 border-purple-700 p-[1vw] bg-black">
+                <div className="relative border-2 border-purple-700 p-[1vw] bg-black rounded-md">
                     <img
                         src={song.image}
                         alt={song.short}
-                        className="md:w-[36vw] md:h-[38vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70"
+                        className="md:w-[36vw] md:h-[38vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70 "
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white">

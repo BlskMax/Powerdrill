@@ -78,26 +78,32 @@ const SongDetailPage = () => {
                     className="md:w-[30vw] w-[50vw] object-cover border-2 border-white p-[1vw] bg-black md:ml-auto md:mr-auto ml-auto mr-auto "/>
 
                     <div className="md:mr-auto md:mt-auto md:mb-auto text-center ">
+
+                    {!song.single &&
+                    
+                    <button
+                    onClick={handleAlbumClick}
+                    className= {`${bebas.variable} font-sans md:text-2xl text-pink-500 text-center
+                    border-b-2
+                    text-xl md:mb-[2vh] mb-[2vh] `} >
+                    {song.album}</button>
+                }
+                    <div className="flex flex-col w-[40vw] mb-[5vh]  ">
                     <h1 className= {`${allura.variable} font-sans md:text-8xl text-white text-center
                     text-4xl`} >
                     {song.short}</h1>
-                    <h1 className= {`${allura.variable} font-sans md:text-5xl text-pink-500 text-center
-                    text-xl md:mb-[1vh] mb-[2vh] `} >
+                    <h1 className= {`${allura.variable} font-sans md:text-5xl text-purple-500 text-center
+                    text-xl mb-[2vh] `} >
                     {song.subtitle}</h1>
-
-                    <button
-                    onClick={handleAlbumClick}
-                    className= {`${bebas.variable} font-sans md:text-xl text-pink-500 text-center
-                    text-xl md:mb-[5vh] mb-[2vh] `} >
-                    {song.album}</button>
+                    </div>
                     
                     
                         {song.available ? (
 
                     <div className="flex flex-row text-center space-x-[5vw] justify-center mt-[1vh] ">
-                    {/* <a href={song.download} target="_blank" rel="noopener noreferrer">
+                    <a href={song.download} target="_blank" rel="noopener noreferrer">
                     <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>DESCARGAR</button>
-                    </a> */}
+                    </a>
 
                     <a href={song.listen} target="_blank" rel="noopener noreferrer">
                     <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>ESCUCHAR</button>
@@ -105,14 +111,14 @@ const SongDetailPage = () => {
                     </div>
                         ) : (
                             <div>
-                                <h1 className="md:text-2xl text-xs w-[70vw] md:w-[30vw] ml-auto mr-auto border-2 md:p-[2vh] bg-black text-purple-500 ">Esta canción pronto estará disponible para escuchar y descargar</h1>
+                                <h1 className="md:text-2xl text-xs w-[70vw] md:w-[30vw] ml-auto mr-auto border-2 md:p-[2vh] bg-black text-purple-500 rounded-2xl ">Esta canción pronto estará disponible para escuchar y descargar</h1>
                             </div>
                         )
                     }
 
                     
                         <button type="button" onClick={scrollToSection}
-                        className={`${bebas.variable} font-sans md:text-5xl text-sm  transition-all duration-500 hover:text-pink-500
+                        className={`${bebas.variable} font-sans md:text-5xl text-sm  transition-all duration-500 text-red-600 hover:text-white
                         md:mt-[5vh] md:opacity-100 opacity-0
                         `}>Lyrics</button>
 

@@ -23,6 +23,7 @@ interface Isong {
     id:number;
     short:string;
     subtitle: string;
+    albumOrder:number;
     link: string;
     description:string;
     album:string;
@@ -32,6 +33,7 @@ interface Isong {
     listen:string;
     lyrics:string;
     available: boolean;
+    single:boolean;
 }
 
 interface IsongProps {
