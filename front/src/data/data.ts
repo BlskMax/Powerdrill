@@ -1,4 +1,4 @@
-import { IAlbum, IDate, Isong } from "@/interfaces/index"
+import { IAlbum, IDate, Isong, IProduct } from "@/interfaces/index"
 
 export const mockDates: IDate[] = [
     {
@@ -41,6 +41,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
 
     },
 
@@ -59,6 +60,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
 
     },
     {
@@ -76,6 +78,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
     },
     {
         id:4,
@@ -92,6 +95,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
     },
 
     {
@@ -109,6 +113,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:false,
         single:false,
+        merch:false,
     },
 
     {
@@ -126,6 +131,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:false,
         single:false,
+        merch:false,
     },
     {
         id:7,
@@ -142,6 +148,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:false,
         single:false,
+        merch:false,
     },
 
     {
@@ -159,6 +166,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:false,
         single:false,
+        merch:false,
     },
         {
             id:900,
@@ -175,6 +183,7 @@ export const mockDates: IDate[] = [
             lyrics:"/images/q1.jpg",
             available:false,
             single:true,
+            merch:false,
         },
  ]
 
@@ -194,6 +203,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
 
     },
 
@@ -212,6 +222,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
 
     },
     {
@@ -229,6 +240,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
     },
     {
         id:4,
@@ -245,6 +257,7 @@ export const mockDates: IDate[] = [
         lyrics:"/images/q1.jpg",
         available:true,
         single:false,
+        merch:false,
     },
 ]
 
@@ -265,6 +278,7 @@ export const mockDates: IDate[] = [
             lyrics:"/images/q1.jpg",
             available:false,
             single:false,
+            merch:false,
         },
 
         {
@@ -282,6 +296,7 @@ export const mockDates: IDate[] = [
             lyrics:"/images/q1.jpg",
             available:false,
             single:false,
+            merch:false,
         },
         {
             id:7,
@@ -298,6 +313,7 @@ export const mockDates: IDate[] = [
             lyrics:"/images/q1.jpg",
             available:false,
             single:false,
+            merch:false,
         },
 
         {
@@ -315,6 +331,7 @@ export const mockDates: IDate[] = [
             lyrics:"/images/q1.jpg",
             available:false,
             single:false,
+            merch:false,
         },
 
 
@@ -334,7 +351,8 @@ export const mockDates: IDate[] = [
         available:true,
         download:"string",
         listen:"https://youtu.be/exMARdJFH30",
-        release:"14/Feb/25"
+        release:"14/Feb/25",
+        merch:false,
     },
     {
         id:200,      
@@ -346,8 +364,94 @@ export const mockDates: IDate[] = [
         available:false,
         download:"string",
         listen:"string",
-        release:"30/May/25"
+        release:"30/May/25",
+        merch:false,
     },
 
  ]
 
+ export const mockMerch: IProduct[] = [
+    {
+        id:1801 ,
+        name: "Playera Logo (Roja)" ,
+        short:"Logo Rojo" ,
+        long: "Playera" ,
+        price: "$300 MXN",
+        description:"ola" ,
+        category:"shirt",
+        link:"www.google.com",
+        image:"/images/imgMockLogoShirtRed.jpg",
+        stock:1,
+        available:true,
+    },
+
+    {
+        id:1802 ,
+        name: "Playera Logo (Morada)" ,
+        short:"Logo Morado" ,
+        long: "Playera" ,
+        price: "$250 MXN" ,
+        description:"ola" ,
+        category:"shirt",
+        link:"www.google.com",
+        image:"/images/imgMockLogoShirtPurp.jpg",
+        stock:1,
+        available:true,
+    },
+
+    {
+        id:1803 ,
+        name: "Playera Logo (Blanca)" ,
+        short:"Logo Blanco" ,
+        long: "Playera" ,
+        price: "$250 MXN" ,
+        description:"ola" ,
+        category:"shirt",
+        link:"www.google.com",
+        image:"/images/imgMockLogoShirtWhite.jpg",
+        stock:1,
+        available:true,
+    },
+
+    {
+        id:1804,
+        name: "Purple Love CD" ,
+        short:"Purple Love Distress" ,
+        long: "CD" ,
+        price: "$189 MXN" ,
+        description:"ola" ,
+        category:"cd",
+        link:"www.google.com",
+        image:"/images/imgMockPurpleLove.jpg",
+        stock:1,
+        available:true,
+    },
+    {
+        id:1805,
+        name: "Farewell CD" ,
+        short:"A Farewell To Hate" ,
+        long: "CD" ,
+        price: "$189 MXN" ,
+        description:"ola" ,
+        category:"cd",
+        link:"www.google.com",
+        image:"/images/imgMockFarewell.jpg",
+        stock:1,
+        available:true,
+    },
+
+    {
+        id:1806,
+        name: "Print Butcher" ,
+        short:"Butcher" ,
+        long: "Print" ,
+        price: "$125 MXN" ,
+        description:"ola" ,
+        category:"cd",
+        link:"www.google.com",
+        image:"/images/imgMockBucthPrint.jpg",
+        stock:1,
+        available:true,
+    },
+    
+ ]

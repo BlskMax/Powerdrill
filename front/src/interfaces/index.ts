@@ -34,6 +34,7 @@ interface Isong {
     lyrics:string;
     available: boolean;
     single:boolean;
+    merch:boolean;
 }
 
 interface IsongProps {
@@ -56,6 +57,7 @@ interface IAlbum {
     download:string;
     listen:string;
     release:string;
+    merch:boolean,
 }
 
 interface IAlbumProps {
@@ -64,6 +66,29 @@ interface IAlbumProps {
 
 interface IAlbumListProps {
     albums: IAlbum[];
+}
+
+
+interface IProduct {
+    id:number;
+    name:string;
+    short:string;
+    long: string;
+    price:string;
+    description:string;
+    category:string;
+    link:string;
+    image:string;
+    stock:number;
+    available:boolean;
+}
+
+interface IProductProps {
+    product: IProduct;
+}
+
+interface IProductListProps {
+    products: IProduct[];
 }
 
 
@@ -76,6 +101,9 @@ export type {
     ISongListProps,
     IAlbum,
     IAlbumProps,
-    IAlbumListProps
+    IAlbumListProps,
+    IProduct,
+    IProductProps,
+    IProductListProps,
 }
 
