@@ -19,12 +19,26 @@ interface IDateListProps {
     tickets: IDate[];
 }
 
+interface IDateFeatured {
+    id: number;
+    time: string;
+    date: string;
+    location: string;
+    venue:string;
+    name: string;
+    link: string;
+    available:boolean;
+}
+
 interface Isong {
     id:number;
     short:string;
     subtitle: string;
     albumOrder:number;
     link: string;
+    musicVideo:string;
+    availableMusicVideo:boolean;
+    thumbnail:string;
     description:string;
     album:string;
     albumId:number;

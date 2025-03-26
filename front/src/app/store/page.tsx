@@ -15,7 +15,7 @@ async function merchPage () {
   return (
     <main 
     className={styles.fondo}>
-    <div className="w-screen h-screen">
+    <div className="w-screen h-auto">
 
 
     <div className="md:ml-[2vw] md:mr-0 md:mt-[20vh] mt-[15vh] ">
@@ -26,9 +26,9 @@ async function merchPage () {
     <img src="/images/proximamente.png" alt="logo" className=" md:w-[45vw] w-[85vw] logo md:ml-[2vw]" />
     </div>
 
-    {/* <div className="mb-[10vh] ">
+    <div className="mb-[10vh] ">
       <MerchFullList products={products} />
-    </div> */}
+    </div>
 
     </div>  
     </main>

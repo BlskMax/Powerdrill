@@ -1,8 +1,16 @@
+'use client'
 import Image from "next/image";
 import styles from "@/components/backgrounds/Backgrounds.module.css"
 import { Allura, Bebas_Neue } from "next/font/google";
 import Carrousel from "@/components/carrousel/Carrousel";
 import HomeCards from "@/components/homeCards/HomeCards";
+import { IProduct, Isong } from "@/interfaces";
+import { mockAlbums, mockMerch, mockSongs } from "@/data/data";
+import { GoClockFill } from "react-icons/go";
+import { FaMapLocationDot } from "react-icons/fa6";
+import FeaturedShow from "@/components/featuredShow/FeaturedShow";
+import FeaturedVideos from "@/components/featuredVideos/FeaturedVideos";
+import { useEffect, useState } from "react";
 
 const allura = Allura({
   subsets: ['latin'],
@@ -16,8 +24,29 @@ const bebas = Bebas_Neue({
   variable: '--font-bebas',
 });
 
+async function fetchProducts (): Promise <IProduct[]> {
+  return mockMerch.sort(() => Math.random() - 0.5)
+}
+
+async function fetchSongs (): Promise <Isong[]> {
+  return mockSongs
+}
+
 
 export default function Home() {
+
+  const [songs, setSongs] = useState<Isong[]>([]);
+
+  useEffect(() => {
+    async function loadSongs() {
+      const fetchedSongs = await fetchSongs();
+      console.log(fetchedSongs)
+      setSongs (fetchedSongs);
+    }
+
+    loadSongs();
+  }, []);
+
   return (
     <main 
     className={styles.fondo}>
@@ -34,6 +63,13 @@ export default function Home() {
       pt-[5vh]">
         <HomeCards />
       </div>
+
+      <FeaturedShow />
+
+      <FeaturedVideos songs={songs} />
+      
+
+    
 
     <div className="md:mt-[2vh] md:w-[95vw] border-2 border-purple-700 bg-[url('/images/RE7.jpg')] bg-cover bg-black bg-opacity-60 p-[3vw] md:mb-[10vh] mb-[3vh] ml-auto mr-auto">
 

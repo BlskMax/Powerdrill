@@ -102,12 +102,13 @@ const ProductDetailPage = () => {
                         <h2 className={`${bebas.variable} font-sans text-6xl text-center mb-5`}>Merch Relacionada:</h2>
                         <div className="flex flex-wrap justify-center gap-[3vw]">
                             {relatedProducts.map((p) => (
-                                <div key={p.id} className="cursor-pointer w-[200px] text-center border border-white p-3 rounded-lg hover:scale-105 transition duration-300"
+                                <div key={p.id} className="cursor-pointer w-[200px] text-center border border-white bg-black bg-opacity-50 p-3 rounded-lg hover:scale-105 hover:bg-opacity-100 transition duration-300"
                                     onClick={() => router.push(`/store/product/${p.id}`)}
                                 >
                                     <img src={p.image} alt={p.short} className="w-full h-[25vh] object-cover rounded-md mb-2" />
                                     <h3 className={`${bebas.variable} font-sans text-xl`}>{p.short}</h3>
                                     <h3 className={`${bebas.variable} font-sans text-xl text-pink-500`}>{p.long}</h3>
+                                    
                                     <p className="text-sm text-gray-400">{p.price}</p>
                                 </div>
                             ))}

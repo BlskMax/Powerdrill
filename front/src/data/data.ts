@@ -32,6 +32,9 @@ export const mockDates: IDate[] = [
         subtitle:"(A Song For Syd)",
         albumOrder:1,
         link:"link",
+        musicVideo:"",
+        availableMusicVideo:false,
+        thumbnail:"",
         description:"descript",
         album:"Purple Love Distress",
         albumId:100,
@@ -51,6 +54,9 @@ export const mockDates: IDate[] = [
         subtitle:"",
         albumOrder:2,
         link:"link",
+        musicVideo:"https://youtu.be/exMARdJFH30",
+        availableMusicVideo:true,
+        thumbnail:"/images/pinkThumb.jpg",
         description:"descript",
         album:"Purple Love Distress",
         albumId:100,
@@ -69,6 +75,9 @@ export const mockDates: IDate[] = [
         subtitle:"",
         albumOrder:3,
         link:"link",
+        musicVideo:"https://youtu.be/exMARdJFH30",
+        availableMusicVideo:true,
+        thumbnail:"/images/meganThumb.jpg",
         description:"descript",
         album:"Purple Love Distress",
         albumId:100,
@@ -86,6 +95,9 @@ export const mockDates: IDate[] = [
         subtitle:"(Tungsteno en Depresión)",
         albumOrder:4,
         link:"link",
+        musicVideo:"",
+        availableMusicVideo:false,
+        thumbnail:"",
         description:"descript",
         album:"Purple Love Distress",
         albumId:100,
@@ -104,6 +116,9 @@ export const mockDates: IDate[] = [
         subtitle:"",
         albumOrder:1,
         link:"link",
+        musicVideo:"",
+        availableMusicVideo:false,
+        thumbnail:"",
         description:"descript",
         album:"A Farewell To Hate",
         albumId:200,
@@ -122,6 +137,9 @@ export const mockDates: IDate[] = [
         subtitle:"",
         albumOrder:2,
         link:"link",
+        musicVideo:"",
+        availableMusicVideo:false,
+        thumbnail:"",
         description:"descript",
         album:"A Farewell To Hate",
         albumId:200,
@@ -139,6 +157,9 @@ export const mockDates: IDate[] = [
         subtitle:"",
         albumOrder:3,
         link:"link",
+        musicVideo:"",
+        availableMusicVideo:false,
+        thumbnail:"",
         description:"descript",
         album:"A Farewell To Hate",
         albumId:200,
@@ -157,6 +178,9 @@ export const mockDates: IDate[] = [
         subtitle:"",
         albumOrder:4,
         link:"link",
+        musicVideo:"",
+        availableMusicVideo:false,
+        thumbnail:"",
         description:"descript",
         album:"A Farewell To Hate",
         albumId:200,
@@ -174,6 +198,9 @@ export const mockDates: IDate[] = [
             subtitle:"",
             albumOrder:1,
             link:"link",
+            musicVideo:"",
+            availableMusicVideo:false,
+            thumbnail:"",
             description:"descript",
             album:"Butcher",
             albumId:900,
@@ -187,158 +214,11 @@ export const mockDates: IDate[] = [
         },
  ]
 
- export const purpleLove: Isong[] = [
-    {
-        id:1,
-        short:"Shock Value",
-        subtitle:"(A Song For Syd)",
-        albumOrder:1,
-        link:"link",
-        description:"descript",
-        album:"Purple Love Distress",
-        albumId:100,
-        image:"/images/resEyes.jpg",
-        download:"https://www.youtube.com/@lustrabbit6136",
-        listen:"https://youtu.be/exMARdJFH30",
-        lyrics:"/images/q1.jpg",
-        available:true,
-        single:false,
-        merch:false,
+ export const purpleLove: Isong[] = mockSongs.filter(song => song.albumId === 100);
 
-    },
+ export const farewell: Isong[] = mockSongs.filter(song => song.albumId === 200);
 
-    {
-        id:2,
-        short:"Pink Machine",
-        subtitle:"",
-        albumOrder:2,
-        link:"link",
-        description:"descript",
-        album:"Purple Love Distress",
-        albumId:100,
-        image:"/images/pinkMaxxxine1.jpg",
-        download:"https://www.youtube.com/@lustrabbit6136",
-        listen:"https://youtu.be/exMARdJFH30",
-        lyrics:"/images/q1.jpg",
-        available:true,
-        single:false,
-        merch:false,
-
-    },
-    {
-        id:3,
-        short:"Coagula Megan Mason",
-        subtitle:"",
-        albumOrder:3,
-        link:"link",
-        description:"descript",
-        album:"Purple Love Distress",
-        albumId:100,
-        image:"/images/wampiro2.jpg",
-        download:"https://www.youtube.com/@lustrabbit6136",
-        listen:"https://youtu.be/lD10-aE8S20",
-        lyrics:"/images/q1.jpg",
-        available:true,
-        single:false,
-        merch:false,
-    },
-    {
-        id:4,
-        short:"Sueños Violentos",
-        subtitle:"(Tungsteno en Depresión)",
-        albumOrder:4,
-        link:"link",
-        description:"descript",
-        album:"Purple Love Distress",
-        albumId:100,
-        image:"/images/candleLight.jpg",
-        download:"https://www.youtube.com/@lustrabbit6136",
-        listen:"https://youtu.be/exMARdJFH30",
-        lyrics:"/images/q1.jpg",
-        available:true,
-        single:false,
-        merch:false,
-    },
-]
-
-    export const farewell: Isong[] = [
-
-        {
-            id:5,
-            short:"Electrica",
-            subtitle:"",
-            albumOrder:1,
-            link:"link",
-            description:"descript",
-            album:"A Farewell To Hate",
-            albumId:200,
-            image:"/images/ptp4.jpg",
-            download:"https://www.youtube.com/@lustrabbit6136",
-            listen:"https://www.youtube.com/@lustrabbit6136",
-            lyrics:"/images/q1.jpg",
-            available:false,
-            single:false,
-            merch:false,
-        },
-
-        {
-            id:6,
-            short:"Erosadness",
-            subtitle:"",
-            albumOrder:2,
-            link:"link",
-            description:"descript",
-            album:"A Farewell To Hate",
-            albumId:200,
-            image:"/images/eroSad.jpg",
-            download:"https://www.youtube.com/@lustrabbit6136",
-            listen:"https://www.youtube.com/@lustrabbit6136",
-            lyrics:"/images/q1.jpg",
-            available:false,
-            single:false,
-            merch:false,
-        },
-        {
-            id:7,
-            short:"Cristal",
-            subtitle:"",
-            albumOrder:3,
-            link:"link",
-            description:"descript",
-            album:"A Farewell To Hate",
-            albumId:200,
-            image:"/images/cristal_new.jpg",
-            download:"https://www.youtube.com/@lustrabbit6136",
-            listen:"https://www.youtube.com/@lustrabbit6136",
-            lyrics:"/images/q1.jpg",
-            available:false,
-            single:false,
-            merch:false,
-        },
-
-        {
-            id:8,
-            short:"Full Death Halo",
-            subtitle:"",
-            albumOrder:4,
-            link:"link",
-            description:"descript",
-            album:"A Farewell To Hate",
-            albumId:200,
-            image:"/images/blackMesa.jpg",
-            download:"https://www.youtube.com/@lustrabbit6136",
-            listen:"https://www.youtube.com/@lustrabbit6136",
-            lyrics:"/images/q1.jpg",
-            available:false,
-            single:false,
-            merch:false,
-        },
-
-
-
-        
-        
-    ]
+ export const featuredMusicVideos: Isong[] = mockSongs.filter(song => song.availableMusicVideo)
 
  export const mockAlbums: IAlbum[] = [
     {
@@ -382,7 +262,7 @@ export const mockDates: IDate[] = [
         link:"www.google.com",
         image:"/images/imgMockLogoShirtRed.jpg",
         stock:1,
-        available:true,
+        available:false,
     },
 
     {
@@ -396,7 +276,7 @@ export const mockDates: IDate[] = [
         link:"www.google.com",
         image:"/images/imgMockLogoShirtPurp.jpg",
         stock:1,
-        available:true,
+        available:false,
     },
 
     {
@@ -410,7 +290,7 @@ export const mockDates: IDate[] = [
         link:"www.google.com",
         image:"/images/imgMockLogoShirtWhite.jpg",
         stock:1,
-        available:true,
+        available:false,
     },
 
     {
@@ -424,7 +304,7 @@ export const mockDates: IDate[] = [
         link:"www.google.com",
         image:"/images/imgMockPurpleLove.jpg",
         stock:1,
-        available:true,
+        available:false,
     },
     {
         id:1805,
@@ -437,7 +317,7 @@ export const mockDates: IDate[] = [
         link:"www.google.com",
         image:"/images/imgMockFarewell.jpg",
         stock:1,
-        available:true,
+        available:false,
     },
 
     {
@@ -451,7 +331,9 @@ export const mockDates: IDate[] = [
         link:"www.google.com",
         image:"/images/imgMockBucthPrint.jpg",
         stock:1,
-        available:true,
+        available:false,
     },
     
  ]
+
+ export const featuredMerch: IProduct[] = mockMerch.filter(product => product.id === 1804 || 1803)

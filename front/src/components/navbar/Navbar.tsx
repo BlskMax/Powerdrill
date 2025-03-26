@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
 <main>
-    <div className="bg-black absolute top-0 flex flex-row md:flex-row w-full items-center md:p-2 p-[1vw] md:space-x-8 justify-between border-b-2 border-purple-700">
+    <div className="bg-black bg-opacity-75 absolute top-0 flex flex-row md:flex-row w-full items-center md:p-2 p-[1vw] md:space-x-8 justify-between border-b-2 border-pink-400 border-opacity-75">
         
         {/* Logo */}
         <section className="flex justify-start w-full md:w-auto items-center md:space-x-10">
@@ -33,21 +33,17 @@ function Navbar() {
             </button>
         </section>
 
-        {/* Botones */}
+
+
         <section className="md:flex md:flex-row items-center w-[100vw] md:w-auto space-x-[4vw] md:space-x-12 md:pr-[1vw]">
 
-            {pathname !== '/sound' && (                        
+        {pathname !== '/sound' && (
                 <button type="button" onClick={() => router.push('/sound')}>
-                    <div className="relative w-[20vw] md:w-[10vw] h-[5vh] md:h-[8vh] group">
-                        <img 
-                            src="/images/soundButt.png" 
-                            alt="Sound" 
-                            className="absolute top-0 left-0 w-full h-full object-contain md:opacity-100 opacity-0 group-hover:opacity-0 transition-opacity duration-300"
-                        />
+                    <div className=" w-[20vw] md:w-[10vw] h-[5vh] md:h-[8vh] ">
                         <img 
                             src="/images/soundGlow.png" 
-                            alt="Sound Hover" 
-                            className="absolute top-0 left-0 w-full h-full object-contain md:opacity-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300"
+                            alt="Tickets" 
+                            className="w-full h-full hover:scale-105 transition duration-300"
                         />
                     </div>
                 </button>
@@ -55,37 +51,27 @@ function Navbar() {
 
             {pathname !== '/tickets' && (
                 <button type="button" onClick={() => router.push('/tickets')}>
-                    <div className="relative w-[20vw] md:w-[10vw] h-[5vh] md:h-[8vh] group">
-                        <img 
-                            src="/images/showButt.png" 
-                            alt="Tickets" 
-                            className="absolute top-0 left-0 w-full h-full object-contain md:opacity-100 opacity-0 group-hover:opacity-0 transition-opacity duration-300"
-                        />
+                    <div className=" w-[20vw] md:w-[10vw] h-[5vh] md:h-[8vh] ">
                         <img 
                             src="/images/showGlow.png" 
-                            alt="Tickets Hover" 
-                            className="absolute top-0 left-0 w-full h-full object-contain md:opacity-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300"
+                            alt="Tickets" 
+                            className="w-full h-full hover:scale-105 transition duration-300"
                         />
                     </div>
                 </button>
             )}
 
-            {/* {pathname !== '/store' && (
+            {pathname !== '/store' && (
                 <button type="button" onClick={() => router.push('/store')}>
-                    <div className="relative w-[20vw] md:w-[10vw] h-[5vh] md:h-[8vh] group">
-                        <img 
-                            src="/images/merchButt.png" 
-                            alt="Store" 
-                            className="absolute top-0 left-0 w-full h-full object-contain opacity-100 group-hover:opacity-0 transition-opacity duration-300"
-                        />
+                    <div className=" w-[20vw] md:w-[10vw] h-[5vh] md:h-[8vh] ">
                         <img 
                             src="/images/merchGlow.png" 
-                            alt="Store Hover" 
-                            className="absolute top-0 left-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            alt="Tickets" 
+                            className="w-full h-full hover:scale-105 transition duration-300"
                         />
                     </div>
                 </button>
-            )} */}
+            )}
 
         </section>
     </div>

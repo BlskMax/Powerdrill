@@ -1,6 +1,6 @@
 import { IDateProps } from "@/interfaces";
 import { Bebas_Neue, Protest_Strike } from "next/font/google";
-import { FaMapLocationDot } from "react-icons/fa6";
+import { FaBuilding, FaMapLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
 
 
@@ -38,6 +38,11 @@ function TicketCard({ ticket }: IDateProps) {
             </section>
 
             <section className="md:space-y-[3vh] w-[80vw] md:w-[25vw] text-center md:text-left flex md:flex-col flex-row">
+              <div className="flex flex-row justify- space-x-[1vw] items-center">
+                <FaBuilding  className="text-2xl md:text-4xl text-purple-700" />
+                <p className="w-[50vw] md:w-[20vw] text-left font-extrabold text-xs md:text-xl uppercase">{ticket.venue}</p>
+              </div>
+  
               <div className="flex flex-row justify- space-x-[1vw] items-center">
                 <FaMapLocationDot className="text-2xl md:text-4xl text-purple-700" />
                 <p className="w-[50vw] md:w-[20vw] text-left font-extrabold text-xs md:text-xl uppercase">{ticket.location}</p>

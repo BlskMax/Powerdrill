@@ -100,6 +100,7 @@ const SongDetailPage = () => {
                     
                         {song.available ? (
 
+
                     <div className="flex flex-row text-center space-x-[5vw] justify-center mt-[1vh] ">
                     <a href={song.download} target="_blank" rel="noopener noreferrer">
                     <button className={`${bebas.variable} font-sans md:w-[16vw] md:h-[10vh] w-[30vw] md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2  bg-black hover:border-purple-700 `}>DESCARGAR</button>
