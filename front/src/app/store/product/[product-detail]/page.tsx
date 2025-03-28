@@ -109,7 +109,10 @@ const ProductDetailPage = () => {
                                     <h3 className={`${bebas.variable} font-sans text-xl`}>{p.short}</h3>
                                     <h3 className={`${bebas.variable} font-sans text-xl text-pink-500`}>{p.long}</h3>
                                     
+                                    {product.available && 
+                                    
                                     <p className="text-sm text-gray-400">{p.price}</p>
+                                    }
                                 </div>
                             ))}
                         </div>

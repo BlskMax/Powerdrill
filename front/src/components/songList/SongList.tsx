@@ -15,6 +15,10 @@ function SongList ({songs}: ISongListProps) {
         
         <main className=" w-screen mt-[1vh] flex flex-row justify-evenly flex-wrap"> 
 
+        <img src="/images/cancionesImage.png" alt="CANCIONES"
+        className=" md:w-[40vw] md:mt-[2vh] md:mb-[10vh]
+         w-[60vw] mt-[2vh] mb-[3vh] mr-auto ml-auto"></img>
+
         <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-[5vw] md:gap-y-[2vw] gap-x-[4vw] gap-y-[2vh] pl-[2vw] pr-[2vw]  ">
         {songs.map ((song: Isong) => (
         <SongCard song={song} key={song.id}/>

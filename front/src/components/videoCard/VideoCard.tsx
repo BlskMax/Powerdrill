@@ -26,31 +26,35 @@ function VideoCard({ song }: IsongProps) {
 
             {song.availableMusicVideo &&
 
-            <main className="flex md:flex-col-reverse flex-col items-start">
-                <div className="relative border-2 border-purple-700 p-[1vw] bg-black rounded-md">
+            <main className="flex flex-col items-start bg-white bg-opacity-95 h-[67vh] ">
+                <div className="relative p-[1vw] ">
                     <img
                         src={song.thumbnail}
                         alt={song.short}
-                        className="md:w-[60vw] md:h-[30vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70 "
+                        className="md:w-[30vw] md:h-[50vh] w-[36vw] h-[18vh] object-cover duration-300 hover:opacity-70 "
                     />
 
-                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white">
+                    <section className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 opacity-0 hover:opacity-100 duration-300 transition-opacity text-white">
+                        <a href={song.musicVideo} target="_blank">
                         <button
-                            onClick={handleSongClick}
                             className="font-bold md:text-4xl hover:scale-110 duration-300"
                         >
+
                             <img
-                            src="/images/adlerDetails.png"
+                            src="/images/ver.png"
                             alt="DETALLES"
-                            className="md:w-[12vw] w-[24vw] opacity-80 hover:opacity-100 duration-300"
+                            className="md:w-[6vw] w-[24vw] opacity-80 hover:opacity-100 duration-300"
                             />
                         </button>
-                    </div>
-                </div>
+                        </a>
+                    </section>
 
-                <h1 className={`${bebas.variable} font-sans md:text-3xl text-sm md:w-[20vw] w-[40vw] md:text-center md:mb-[2vh] mt-[2vh] text-center mb-[1vh] `}>
-                    {song.short}
-                </h1>
+                </div>
+                    <section className="bg-black w-[20vw] mt-[2vh] mr-auto ml-auto ">
+                        <h1 className={`${bebas.variable} font-sans text-center text-xl md:text-6xl space-x-8 uppercase`}>
+                            {song.videoType}
+                        </h1>
+                    </section>
             </main>
 }
         </>

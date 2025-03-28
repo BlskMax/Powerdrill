@@ -39,6 +39,7 @@ interface Isong {
     musicVideo:string;
     availableMusicVideo:boolean;
     thumbnail:string;
+    videoType:string;
     description:string;
     album:string;
     albumId:number;
