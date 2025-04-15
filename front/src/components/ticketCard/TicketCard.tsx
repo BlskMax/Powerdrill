@@ -56,7 +56,7 @@ function TicketCard({ ticket }: IDateProps) {
 
             </article>
 
-            
+            {ticket.purchaseLinkAvailable && (
 
             <section className="mt-4">
               <a href={ticket.link} target="_blank" rel="noopener noreferrer">
@@ -67,6 +67,8 @@ function TicketCard({ ticket }: IDateProps) {
                 </button>
               </a>
             </section>
+            )}
+
   
           </>
         ) : (
