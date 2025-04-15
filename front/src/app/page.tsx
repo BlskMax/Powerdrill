@@ -80,7 +80,9 @@ export default function Home() {
         <HomeCards />
       </div>
 
+      <section className="mb-[5vh] ">
       <FeaturedShow />
+      </section>
 
       <section id="about">
       <MeetPower2 />

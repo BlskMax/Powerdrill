@@ -9,6 +9,8 @@ interface IDate {
     name: string;
     link: string;
     available:boolean;
+    purchaseLinkAvailable:boolean;
+    PurchaseLink:string;
 }
 
 interface IDateProps {

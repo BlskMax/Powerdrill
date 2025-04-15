@@ -3,13 +3,27 @@ import { IAlbum, IDate, Isong, IProduct } from "@/interfaces/index"
 export const mockDates: IDate[] = [
     {
         id:1,
+        time: "19:00HRS",
+        date: "Mayo 9, 2025",
+        location: "Av. Delfin Madrigal 348, Metro Universidad",
+        venue:"Café Caribe",
+        name: "COYOACAN, CDMX",
+        link: "https://wa.me/525570680017",
+        available: true,
+        purchaseLinkAvailable:false,
+        PurchaseLink:"",
+    },
+    {
+        id:1,
         time: "20:00HRS",
-        date: "Abril 12, 2025",
+        date: "Junio 10, 2025",
         location: "Blvd. Juarez 302, Cuernavaca Centro",
         venue:"El cabaré",
         name: "Cuernavaca, Morelos",
         link: "https://wa.me/525570680017",
         available: true,
+        purchaseLinkAvailable:false,
+        PurchaseLink:"",
     },
     {
         id:2,
@@ -20,6 +34,8 @@ export const mockDates: IDate[] = [
         name: "Cuernavaca, Morelos",
         link: "https://wa.me/525570680017",
         available: false,
+        purchaseLinkAvailable:false,
+        PurchaseLink:"",
     },
     
  ]

@@ -18,26 +18,26 @@ function FeaturedShow () {
 
     return (
 
-        <section>
+        <main>
 <div>
   <img src="images/sigShow.png"
-  className="w-[40vw] mb-[5vh] ml-auto mr-auto"></img>
+  className="w-[40vw] mb-[5vh] mr-auto ml-[3vw]"></img>
 </div>
 
 <article className=" flex md:flex-col flex-col place-items-center">
-<section className="text-center md:text-center w-[80vw] md:w-[50vw] ">
+<section className="text-center md:text-center w-[80vw] md:w-[50vw] mr-auto ml-[3vw] ">
   <h1
-    className={`${bebas.variable} font-sans text-center text-3xl md:text-4xl space-x-8 text-white uppercase`}
+    className={`${bebas.variable} font-sans text-left text-3xl md:text-4xl space-x-8 text-white uppercase`}
   >
     El Cabaré
   </h1>
   <h1
-    className={`${bebas.variable} font-sans text-center text-3xl md:text-8xl space-x-8 text-red-800 uppercase`}
+    className={`${bebas.variable} font-sans text-left text-3xl md:text-8xl space-x-8 text-red-800 uppercase`}
   >
     CUERNAVACA, MORELOS
   </h1>
   <h1
-    className={`${bebas.variable} font-sans text-center text-xl md:text-6xl space-x-8 uppercase`}
+    className={`${bebas.variable} font-sans text-left text-xl md:text-6xl space-x-8 uppercase`}
   >
     ABRIL 12, 2025
   </h1>
@@ -51,7 +51,7 @@ function FeaturedShow () {
   </button>
 </article>
 
-  </section>
+  </main>
 
   
 

@@ -19,7 +19,7 @@ const  protest = Protest_Strike({
 
 function TicketCard({ ticket }: IDateProps) {
     return (
-      <main className="flex flex-col md:flex-row items-center space-y-[3vh] md:space-x-[3vw] w-screen justify-evenly">
+      <main className="flex flex-col md:flex-row items-center space-y-[3vh] md:space-x-[3vw] w-screen justify-evenly border-b-2 border-dotted pb-[6vh] ">
         {ticket.available ? (
           <>
 
@@ -55,16 +55,19 @@ function TicketCard({ ticket }: IDateProps) {
             </section>
 
             </article>
-  
+
+            
+
             <section className="mt-4">
               <a href={ticket.link} target="_blank" rel="noopener noreferrer">
                 <button
-                  className={`${bebas.variable} font-sans w-[35vw] md:w-[16vw] h-[5vh] md:h-[10vh] text-base md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2 border-purple-700 bg-black `}
+                  className={`${bebas.variable} font-sans w-[35vw] md:w-[10vw] h-[5vh] md:h-[10vh] text-base md:text-4xl rounded-md transition-all duration-500 hover:scale-110 border-2 border-purple-700 bg-black `}
                 >
-                  COMPRAR
+                  INFO
                 </button>
               </a>
             </section>
+  
           </>
         ) : (
           <article className="flex flex-col-reverse">
