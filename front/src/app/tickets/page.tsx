@@ -4,6 +4,7 @@ import { mockDates } from "@/data/data";
 import { IDate } from "@/interfaces";
 import TicketList from "@/components/ticketList/TicketList";
 import { Bebas_Neue } from "next/font/google";
+import PastTicketList from "@/components/pastTicketsList/PastTicketsList";
 
 const  bebas = Bebas_Neue({
     subsets:['latin'],
@@ -52,7 +53,7 @@ async function ticketComponent () {
         </div>
 
       <section className="mb-[3vh] ">
-        <TicketList tickets={pastTickets} />
+        <PastTicketList tickets={pastTickets} />
       </section>
 
     </div>  

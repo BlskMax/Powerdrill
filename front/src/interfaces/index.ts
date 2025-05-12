@@ -108,6 +108,21 @@ interface IProductListProps {
     products: IProduct[];
 }
 
+interface IPicture {
+    id:number;
+    name:string;
+    type:string;
+    photoDir:string;
+}
+
+interface IPictureProps {
+    picture:IPicture;
+}
+
+interface IPictureListProps {
+    pictures:IPicture[];
+}
+
 
 export type {
     IDate,
@@ -122,5 +137,8 @@ export type {
     IProduct,
     IProductProps,
     IProductListProps,
+    IPicture,
+    IPictureProps,
+    IPictureListProps,
 }
 

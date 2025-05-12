@@ -23,7 +23,7 @@ const  bebas = Bebas_Neue({
             <div className="ml-auto mr-[5vw] mb-[5vh] ">
                 <img
                 src="/images/musicVids.png"
-                className="w-[35vw] ">
+                className="w-[35vw] mb-[5vh] mt-[5vh] ">
                 </img>
             </div>
 

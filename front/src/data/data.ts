@@ -1,4 +1,4 @@
-import { IAlbum, IDate, Isong, IProduct } from "@/interfaces/index"
+import { IAlbum, IDate, Isong, IProduct, IPicture } from "@/interfaces/index"
 
 export const mockDates: IDate[] = [
     {
@@ -7,23 +7,23 @@ export const mockDates: IDate[] = [
         date: "Mayo 9, 2025",
         location: "Av. Delfin Madrigal 348, Metro Universidad",
         venue:"Café Caribe",
-        name: "COYOACAN, CDMX",
+        name: "COYOACÁN, CDMX",
         link: "https://wa.me/525570680017",
-        available: true,
+        available: false,
         purchaseLinkAvailable:false,
         PurchaseLink:"",
     },
     {
         id:1,
-        time: "20:00HRS",
-        date: "Junio 10, 2025",
-        location: "Blvd. Juarez 302, Cuernavaca Centro",
-        venue:"El cabaré",
-        name: "Cuernavaca, Morelos",
-        link: "https://wa.me/525570680017",
+        time: "19:00HRS",
+        date: "Mayo 22, 2025",
+        location: "Av. Insurgentes Sur 230, Roma Norte",
+        venue:"La Juanita Coffee Shop",
+        name: "Cuauhtémoc, cdmx",
+        link: "https://maps.app.goo.gl/4b52iuDne7EGZk2A6",
         available: true,
-        purchaseLinkAvailable:false,
-        PurchaseLink:"",
+        purchaseLinkAvailable:true,
+        PurchaseLink:"https://maps.app.goo.gl/4b52iuDne7EGZk2A6",
     },
     {
         id:2,
@@ -362,3 +362,55 @@ export const mockDates: IDate[] = [
  ]
 
  export const featuredMerch: IProduct[] = mockMerch.filter(product => product.id === 1804 || 1803)
+
+ 
+ export const pictureList : IPicture[] = [ 
+    {
+        id:1,
+        name:"Cabare 1",
+        type:"show",
+        photoDir:"/images/fototas/cabare.jpg",
+    },
+
+    {
+        id:2,
+        name:"Flyer 1",
+        type:"flyer",
+        photoDir:"/images/fototas/flyer1.jpg",
+    },
+
+    {
+        id:3,
+        name:"Flyer 2",
+        type:"flyer",
+        photoDir:"/images/fototas/flyer2.jpg",
+    },
+
+    {
+        id:4,
+        name:"Flyer 2",
+        type:"",
+        photoDir:"/images/fototas/jelyeah.jpg",
+    },
+
+    {
+        id:5,
+        name:"Flyer 2",
+        type:"",
+        photoDir:"/images/fototas/pwrPic1.jpg",
+    },
+
+    {
+        id:6,
+        name:"Flyer 2",
+        type:"",
+        photoDir:"/images/fototas/pwrPic2.jpg",
+    },
+
+    {
+        id:7,
+        name:"Flyer 2",
+        type:"",
+        photoDir:"/images/fototas/trip1.jpg",
+    },
+ ]

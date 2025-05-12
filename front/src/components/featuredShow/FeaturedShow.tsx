@@ -29,17 +29,17 @@ function FeaturedShow () {
   <h1
     className={`${bebas.variable} font-sans text-left text-3xl md:text-4xl space-x-8 text-white uppercase`}
   >
-    El Cabaré
+    Café Caribe
   </h1>
   <h1
     className={`${bebas.variable} font-sans text-left text-3xl md:text-8xl space-x-8 text-red-800 uppercase`}
   >
-    CUERNAVACA, MORELOS
+    Coyoacán, cdmx
   </h1>
   <h1
     className={`${bebas.variable} font-sans text-left text-xl md:text-6xl space-x-8 uppercase`}
   >
-    ABRIL 12, 2025
+    Mayo 9, 2025
   </h1>
 </section>
 
